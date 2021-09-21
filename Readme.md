@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Андрей Щербаков](https://up.htmlacademy.ru/htmlcss/32/user/1864825).
-* Наставник: `Неизвестно`.
+- Студент: [Андрей Щербаков](https://up.htmlacademy.ru/htmlcss/32/user/1864825).
+- Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
