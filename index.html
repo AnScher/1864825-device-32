@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="wrapper">
+    <div class="header-wrapper">
       <a class="main-logo" href="#">
         <img class="logo" src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145" height="36">
       </a>
       <form action="#" method="POST">
-        <img src="img/plus.svg" alt="Лупа поиска по сайту" />
         <input type="search" placeholder="Поиск по сайту" />
         <button type="submit" class="visually-hidden search-button">
           Найти
@@ -43,31 +43,32 @@
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
             <a href="#" class="main-navigation-link">
-              ДОСТАВКА
+              Доставка
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="#" class="main-navigation-link">
-              ГАРАНТИЯ
+              Гарантия
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="#" class="main-navigation-link">
-              КОНТАКТЫ
+              Контакты
             </a>
           </li>
         </ul>
-        <div class="catalog">
-          <div class="catalog-description">
-            <span class="catalog-text">КАТАЛОГ ТОВАРОВ</span>>
-            <img scr="" alt="Плюс, который раскрывает список товаров" />
+        <div class="index-catalog-pull-down-menu">
+          <div class="index-catalog-pull-down-menu-desc">
+            <span class="index-catalog-pull-down-menu-text">
+              Каталог товаров
+            </span>
           </div>
           <div class="products-inner-menu visually-hidden">
             <nav class="product-inner-menu-nav">
               <ul class="inner-menu-list">
                 <li class="inner-menu-list-item">
                   <a href="" class="inner-menu-item-link">
-                    Вирутальная реальность
+                    Виртуальная реальность
                   </a>
                 </li>
                 <li class="inner-menu-list-item">
@@ -119,7 +120,7 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
         <h1 class="article-header">Порхает как бабочка, жалит как пчела!</h1>
-        <p class="product-description">
+        <p class="article-product-description">
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.
         </p>
@@ -143,12 +144,12 @@
         </ol>
         <table class="product-specifications">
           <tr>
-            <td>800 м</td>
-            <td>50 м</td>
+            <td class="product-specifications-td">800 м</td>
+            <td class="product-specifications-td">50 м</td>
           </tr>
           <tr>
-            <th>Дальность полета</th>
-            <th>Радиус поражения</th>
+            <th class="product-specifications-th">Дальность полета</th>
+            <th class="product-specifications-th">Радиус поражения</th>
           </tr>
         </table>
       </article>
@@ -159,7 +160,7 @@
         <ul class="categories-list">
           <li class="categories-item">
             <a href="#" class="categories-item-link">
-              <img src="img/virtual_reality_glasses.svg" alt="Очки виртуальной реальности" width="97" height="55" />
+              <img src="img/virtual-reality-glasses.svg" alt="Очки виртуальной реальности" width="97" height="55" />
               Вирутальная реальность
             </a>
           </li>
@@ -171,19 +172,19 @@
           </li>
           <li class="categories-item">
             <a href="#" class="categories-item-link">
-              <img src="img/action_camera.svg" alt="Экшн-камера" width="71" height="87" />
+              <img src="img/action-camera.svg" alt="Экшн-камера" width="71" height="87" />
               Экшн-камеры
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-item-link">
-              <img src="img/fitness_bracelet.svg" alt="Фитнес браслет" width="107" height="65" />
+              <img src="img/fitness-bracelet.svg" alt="Фитнес браслет" width="107" height="65" />
               Фитнес-браслет
             </a>
           </li>
           <li class="categories-item">
             <a href="#" class="categories-item-link">
-              <img src="img/smart_watch.svg" alt="Умные часы" width="56" height="98" />
+              <img src="img/smart-watch.svg" alt="Умные часы" width="56" height="98" />
               Умные часы
             </a>
           </li>
@@ -202,17 +203,17 @@
       <ul class="services-list-name">
         <li class="services-list-name-item">
           <a href="#" class="services-list-name-link">
-            ДОСТАВКА
+            Доставка
           </a>
         </li>
         <li class="services-list-name-item">
           <a href="#" class="services-list-name-link">
-            ГАРАНТИЯ
+            Гарантия
           </a>
         </li>
         <li class="services-list-name-item">
           <a href="#" class="services-list-name-link">
-            КРЕДИТ
+            Кредит
           </a>
         </li>
       </ul>
@@ -223,7 +224,7 @@
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
             этаж.
           </p>
-          <img src="img/delivery_guy.png" alt="Курьер с посылкой" class="service-description-image">
+          <img src="img/delivery-guy.png" alt="Курьер с посылкой" class="service-description-image">
         </li>
         <li class="services-list-desc-item">
           <p class="service-description">
@@ -241,7 +242,7 @@
       <h2 class="visually-hidden">О нас</h2>
       <section class="about-us-delivery">
         <h3 class="visually-hidden">Доставка</h3>
-        <img src="" alt="Грузовик доставки" class="about-us-delivery-image" />
+        <img src="img/delivery_truck.svg" alt="Грузовик доставки" class="about-us-delivery-image" />
         <p class="about-us-delivery-text">Доставим редкий товар под заказ</p>
         <img src="" alt="Восклицательный знак справки" class="about-us-delivery-link-image" />
       </section>
@@ -261,7 +262,7 @@
           <li class="about-us-description-list-item">Токсберри</li>
         </ul>
         <a href="#" class="about-us-description-link">
-          ПОДРОБНЕЕ О НАС
+          Подробнее о нас
         </a>
       </section>
       <section class="about-us-contacts">
@@ -281,7 +282,7 @@
           <li class="about-us-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
         <a href="#" class="about-us-description-link">
-          НАПИШИТЕ НАМ
+          Напишите нам
         </a>
       </section>
     </section>
@@ -293,7 +294,7 @@
       </p>
       <form action="#" method="POST" class="mailing-form">
         <input type="email" class="mailing-subscribe-input" placeholder="Ваш e-mail" required>
-        <button class="button mailing-submit-button" type="submit">ПОДПИСАТЬСЯ</button>
+        <button class="button mailing-submit-button" type="submit">Подписаться</button>
       </form>
       <p class="mailing-description">
         <img src="" alt="Зеленая галочка">
@@ -316,17 +317,17 @@
       <ul class="footer-social-links-list">
         <li class="footer-social-links-item">
           <a class="footer-social-link" href="#">
-            ДОСТАВКА
+            Доставка
           </a>
         </li>
         <li class="footer-social-links-item">
           <a class="footer-social-link" href="#">
-            ГАРАНТИЯ
+            Гарантия
           </a>
         </li>
         <li class="footer-social-links-item">
           <a class="footer-social-link" href="#">
-            КОНТАКТЫ
+            Контакты
           </a>
         </li>
       </ul>
@@ -353,7 +354,7 @@
       <p class="footer-contacts-text">
         <a href="tel:+7 (812) 812-12-12" class="footer-contacts-phone">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru" class="footer-contacts-link">
-          <img src="" alt="Логотип html academy">
+          <img src="img/footer-contacts-link.svg" alt="Логотип html academy">
         </a>
       </p>
     </section>
