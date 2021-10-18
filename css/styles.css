@@ -536,7 +536,6 @@ body {
 .mailing-text {
   width: 1160px;
   display: flex;
-  margin: 0 auto;
 }
 
 .mailing-form-container {
@@ -552,13 +551,11 @@ body {
 .mailing-subscribe-input {
   display: block;
   width: 560px;
-  margin-right: 40px;
 }
 
 .mailing-submit-button {
   display: block;
   width: 260px;
-  margin-right: 136px;
 }
 
 .mailing-subheader {
@@ -567,7 +564,6 @@ body {
   font-size: 50px;
   line-height: 50px;
   width: 560px;
-  margin-top: 75px;
 }
 
 .mailing-description {
@@ -576,7 +572,6 @@ body {
   line-height: 30px;
   color: #444444;
   width: 560px;
-  margin-top: 86px;
   text-align: left;
 }
 
@@ -591,13 +586,6 @@ body {
   color: #000000;
   text-decoration: inherit;
 }
-
-/* .mailing-description-span {
-  font-family: Rubik, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  color: #444444;
-} */
 
 .page-footer {
   width: 1440px;
@@ -907,8 +895,9 @@ body {
   width: 468px;
 }
 
-.products-right-column {
+.products-sorting-right-column {
   width: 972px;
+  background-color: #FFFFFF;
 }
 
 .sorting-products {
