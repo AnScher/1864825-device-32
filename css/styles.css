@@ -129,7 +129,7 @@ body {
   width: 140px;
 }
 
-.logo-and-search-and-pull-down-menu {
+.nav-left-part-container {
   display: flex;
   flex-direction: column;
   width: 540px;
@@ -287,7 +287,7 @@ body {
   text-decoration: inherit;
 }
 
-.index-catalog-pull-down-menu-text {
+.index-pull-down-menu-text {
   font-family: Raleway, Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -907,6 +907,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
 
 .product-cards {
   display: flex;
