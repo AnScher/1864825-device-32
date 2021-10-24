@@ -88,7 +88,7 @@ body {
 
 .user-navigation-enter-item {
   margin-right: 15px;
-  width: 245px;
+  width: 379px;
 }
 
 .user-navigation-compare-item {
@@ -367,14 +367,14 @@ body {
 }
 
 .services {
-  width: 1440px;
+  /* width: 1440px;
   max-width: 1440px;
-  height: 388px;
+  height: 388px; */
 }
 
 .services-background {
-  width: 1440px;
-  height: 288px;
+  width: 1160;
+  margin: 0 auto;
   background-color: #F0F0F0;
   color: black;
 }
