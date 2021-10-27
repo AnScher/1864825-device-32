@@ -88,7 +88,8 @@ body {
 
 .user-navigation-enter-item {
   margin-right: 15px;
-  width: 379px;
+  /* width: 379px; */
+  width: 245px;
 }
 
 .user-navigation-compare-item {
@@ -367,9 +368,7 @@ body {
 }
 
 .services {
-  /* width: 1440px;
-  max-width: 1440px;
-  height: 388px; */
+ margin-bottom: 90px;
 }
 
 .services-background {
@@ -519,7 +518,6 @@ body {
 }
 
 .mailing {
-  width: 1440px;
   background-color: #F0F0F0;
 }
 
