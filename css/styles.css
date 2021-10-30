@@ -869,17 +869,8 @@ a {
 	line-height: 19px;
 }
 
-.breadcrumbs-link {
-	font-family: "Rubik";
-	font-size: 16px;
-	line-height: 19px;
-	color: #000000;
-	opacity: 0.6;
-	text-decoration: none;
-}
-
 .catalog-form-header {
-	font-family: "Raleway";
+	font-family: "Raleway", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
@@ -1143,6 +1134,37 @@ a {
 	list-style-type: none;
 }
 
+.breadcrumbs-item {
+	position: relative;
+	padding-right: 37px;
+}
+
+.breadcrumbs-item::after {
+	content: "";
+	position: absolute;
+	top: 14px;
+	right: 19px;
+	width: 5px;
+	height: 5px;
+	transform: rotate(45deg);
+	border-top: 1px solid #000000;;
+	border-right: 1px solid #000000;;
+}
+
+.breadcrumbs-item:nth-child(2)::after {
+	right: 16px;
+}
+
+
+.breadcrumbs-link {
+	font-family: "Rubik", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
 .catalog-products-wrapper {
 	display: flex;
 	width: 1160px;
@@ -1155,7 +1177,18 @@ a {
 	flex-direction: column;
 	align-items: flex-end;
 	width: 328px;
-	background-color: #efefef;
+	background-color: #EFEFEF;
+}
+
+.catalog-sidebar::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	width: 100vw;
+	height: 100%;
+	background-color: #EFEFEF;
 }
 
 .sidebar-title-wrap {
@@ -1168,7 +1201,7 @@ a {
 	padding-bottom: 30px;
 	margin: 0;
 	padding-left: 60px;
-	font-family: "Raleway";
+	font-family: "Raleway", "Arial", sans-serif ;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
@@ -1177,6 +1210,16 @@ a {
 	text-transform: uppercase;
 	/* basic/black */
 	color: #000000;
+}
+
+.sidebar-header::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 328px;
+	width: 100vw;
+	height: 76px;
+	background-color: #DCDCDC;
 }
 
 .sidebar-form {
@@ -1220,6 +1263,7 @@ a {
 }
 
 .sorting-products {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -1228,7 +1272,18 @@ a {
 	padding-bottom: 25px;
 	padding-left: 72px;
 	box-sizing: border-box;
-	background-color: rgba(0, 0, 0, .08);
+	background-color: #EBEBEB;
+}
+
+.sorting-products::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100vw;
+	height: 100%;
+	background-color: #EBEBEB;
 }
 
 .sorting-updown-list {
