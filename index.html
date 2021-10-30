@@ -10,113 +10,66 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="navigation-all">
-      <div class="nav-left-part-container">
-        <div class="header-logo">
-          <a class="main-logo" href="#">
-            <img class="logo" src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145" height="36">
-          </a>
-        </div>
-
-        <div class="search-form">
-          <form action="#" method="POST">
-            <input type="search" placeholder="Поиск по сайту" width="480" height="20" />
-            <button type="submit" class="visually-hidden search-button">
-              Найти
-            </button>
-          </form>
-        </div>
-
-        <div class="index-pull-down-menu">
-          <div class="index-pull-down-menu-desc">
-            <span class="index-pull-down-menu-text">
-              Каталог товаров
-            </span>
-          </div>
-          <div class="products-inner-menu" hidden>
-            <nav class="product-inner-menu-nav">
-              <ul class="inner-menu-list">
-                <li class="inner-menu-list-item">
-                  <a href="" class="inner-menu-item-link">
-                    Виртуальная реальность
-                  </a>
-                </li>
-                <li class="inner-menu-list-item">
-                  <a href="" class="inner-menu-item-link">
-                    Моноподы для селфи
-                  </a>
-                </li>
-                <li class="inner-menu-list-item">
-                  <a href="" class="inner-menu-item-link">
-                    Экшн-камеры
-                  </a>
-                </li>
-              </ul>
-              <ul class="inner-menu-list">
-                <li class="inner-menu-list-item">
-                  <a href="" class="inner-menu-item-link">
-                    Фитнес-браслеты
-                  </a>
-                </li>
-                <li class="inner-menu-list-item">
-                  <a href="" class="inner-menu-item-link">
-                    Умные часы
-                  </a>
-                </li>
-              </ul>
-              <ul class="inner-menu-list">
-                <li class="inner-menu-list-item">
-                  <a href="" class="inner-menu-item-link">
-                    Квадрокоптеры
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+  <div class="header-wrapper">
+    <header class="page-header">
+      <h1 class="visually-hidden">Интернет-магазин "DEVICE"</h1>
+      <div class="page-header-logo">
+        <a><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145" height="36"></a>
       </div>
-      <nav class="user-navigation">
-        <ul class="user-navigation-list">
-          <li class="user-navigation-enter-item">
-            <a href="#" class="user-navigation-link">
-              <img src="img/user-enter.svg" class="enter-image" alt="Вход на сайт" />
-              Войти
-            </a>
+      <nav class="navigation">
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item  navigation-user-item-search">
+            <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru">
+              <input class="navigation-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="navigation-search-btn" type="submit">Найти</button>
+              <label class="navigation-search-label" for="search">
+                <span class="visually-hidden">Поиск:</span>
+              </label>
+            </form>
           </li>
-          <li class="user-navigation-compare-item">
-            <a href="#" class="user-navigation-link">
-              <img src="img/compare.svg" class="compare-img" alt="Сравнить товар" />
-              Сравнить
-            </a>
+          <li class="navigation-user-item  navigation-user-item-login">
+            <a class="navigation-user-link  navigation-user-link-login" href="#">Войти</a>
           </li>
-          <li class="user-navigation-cart-item">
-            <a href="#" class="user-navigation-link">
-              <img src="img/cart.svg" class="basket-image" alt="Корзина покупок" />
-              Корзина
-            </a>
+          <li class="navigation-user-item  navigation-user-item-compare">
+            <a class="navigation-user-link  navigation-user-link-compare" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-user-item  navigation-user-item-cart">
+            <a class="navigation-user-link  navigation-user-link-cart" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="main-navigation-list">
-          <li class="main-navigation-delivery-item">
-            <a href="#" class="main-navigation-link">
-              Доставка
-            </a>
+          <li class="main-navigation-list-item  main-navigation-list-item-catalog">
+            <a class="main-navigation-list-link  main-navigation-list-link-catalog" href="#">Каталог товаров</a>
+            <div class="main-navigation-inner-menu">
+              <ul class="inner-menu-list">
+                <li class="inner-menu-list-item">
+                  <a class="inner-menu-list-link" href="#">Виртуальная реальность</a>
+                  <a class="inner-menu-list-link" href="catalog.html">Моноподы для селфи</a>
+                  <a class="inner-menu-list-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="inner-menu-list-item">
+                  <a class="inner-menu-list-link" href="#">Фитнес-браслеты</a>
+                  <a class="inner-menu-list-link" href="#">Умные часы</a>
+                </li>
+                <li class="inner-menu-list-item">
+                  <a class="inner-menu-list-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="main-navigation-warranty-item">
-            <a href="#" class="main-navigation-link">
-              Гарантия
-            </a>
+          <li class="main-navigation-list-item  main-navigation-list-item-delivery">
+            <a class="main-navigation-list-link  main-navigation-list-link-delivery" href="#">Доставка</a>
           </li>
-          <li class="main-navigation-contacts-item">
-            <a href="#" class="main-navigation-link">
-              Контакты
-            </a>
+          <li class="main-navigation-list-item  main-navigation-list-item-warranty">
+            <a class="main-navigation-list-link  main-navigation-list-link-warranty" href="#">Гарантия</a>
+          </li>
+          <li class="main-navigation-list-item  main-navigation-list-item-contacts">
+            <a class="main-navigation-list-link  main-navigation-list-link-contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <main class="main-container">
     <h1 class="visually-hidden" hidden>Онлайн-магазин гаджетов Device</h1>
@@ -139,24 +92,27 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="products-description-link">Подробнее</a>
-          <ol class="product-slider-paggination">
-            <li class="slider-paggination-item">
-              <button class="slider-paggination-button slider-paggination-button-current">
-                <span class="visually-hidden">1 Фото</span>
-              </button>
-            </li>
-            <li class="slider-paggination-item">
-              <button class="slider-paggination-button">
-                <span class="visually-hidden">2 Фото</span>
-              </button>
-            </li>
-            <li class="slider-paggination-item">
-              <button class="slider-paggination-button">
-                <span class="visually-hidden">3 Фото</span>
-              </button>
-            </li>
-          </ol>
+          <div class="pagination">
+            <a href="#" class="products-description-link">Подробнее</a>
+            <ol class="product-slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current">
+                  <span class="visually-hidden">1 Фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button">
+                  <span class="visually-hidden">2 Фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button">
+                  <span class="visually-hidden">3 Фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+
           <table class="product-specifications">
             <tr>
               <td class="product-specifications-td">800 м</td>
