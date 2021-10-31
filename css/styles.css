@@ -695,7 +695,7 @@ a {
 	background-color: #F0F0F0;
 	width: 1160px;
 	height: 100px;
-	margin-bottom: 97px;
+	margin-bottom: 139px;
 }
 
 .about-us-delivery-list {
@@ -714,6 +714,27 @@ a {
 .about-us-description,
 .about-us-contacts {
 	width: 560px;
+	position: relative;
+}
+
+.about-us-description::before {
+	content: "";
+	position: absolute;
+	top: -52px;
+	left: 0px;
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+}
+
+.about-us-contacts::before {
+	content: "";
+	position: absolute;
+	top: -52px;
+	left: 0px;
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
 }
 
 .about-us-delivery-image {
@@ -738,6 +759,9 @@ a {
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 26px;
 }
 
 .about-us-description-text {
@@ -745,6 +769,22 @@ a {
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
+}
+
+.main-description {
+	padding-bottom: 36px;
+	width: 497px;
+}
+
+.about-us-description-list {
+	width: 497px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	padding: 0px 0px 62px 26px;
 }
 
 .about-us-description-list-item {
@@ -752,6 +792,19 @@ a {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.about-us-description-list-item::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -26px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #FFC700;
 }
 
 .about-us-description-link {
@@ -764,6 +817,21 @@ a {
 	text-transform: uppercase;
 	color: inherit;
 	text-decoration: inherit;
+	content: "";
+	width: 260px;
+}
+
+.about-us-description-link::before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -2px;
+	bottom: 7px;
+	z-index: -1;
+	width: inherit;
+	height: 8px;
+	margin-top: -5px;
+	background: #FFC700;
 }
 
 .about-us-h4-subheader {
@@ -771,6 +839,9 @@ a {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
 }
 
 .about-us-contacts-address {
@@ -780,6 +851,18 @@ a {
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+}
+
+.contacts-address-phone {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	text-decoration-line: underline;
+	color: #444444;
+	display: block;
+	margin-bottom: 30px;
 }
 
 .mailing {
@@ -874,6 +957,14 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+}
+
+.about-us-schedule {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 204px;
+	margin-bottom: 68px;
 }
 
 .about-us-schedule-item {
