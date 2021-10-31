@@ -413,11 +413,26 @@ a {
 	text-transform: uppercase;
 	color: inherit;
 	text-decoration: inherit;
-	margin-bottom: 70px;
+	width: 220px;
 	margin-right: 200px;
+	background: 0 0;
+	border: 0;
 }
 
-.product-specifications {
+.products-description-link::before {
+	content: "";
+	position: absolute;
+	top: 220px;
+	left: 600px;
+	z-index: -1;
+	width: inherit;
+	height: 8px;
+	margin-top: -5px;
+	background-color: #FFE17F;
+}
+
+
+/* .product-specifications {
 	padding: 0;
 	margin: 0;
 }
@@ -435,7 +450,7 @@ a {
 	line-height: 30px;
 	color: #444444;
 	width: 160px
-}
+} */
 
 .article-image {
 	width: 560px;
@@ -467,12 +482,19 @@ a {
 .pagination {
 	width: 560px;
 	display: flex;
-	flex-direction: flex-start;
+	margin-bottom: 70px;
+	align-items: center;
 }
 
 .product-slider-pagination {
+	width: 80px;
 	display: flex;
-	list-style: none;
+	justify-content: space-between;
+	/* position: absolute;
+	z-index: 1;
+	right: 82px;
+  bottom: 253px; */
+	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
@@ -1458,4 +1480,54 @@ a {
 
 .footer-htmlacademy-link {
 	width: 115px;
+}
+
+.product-specifications {
+	width: 320px;
+}
+
+.product-spec-list, .product-desc-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.spec-list-item, .desc-list-item {
+	width: 160px;
+}
+
+.spec-list-info {
+	font-family: "Rubik", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 30px;
+	/* or 83% */
+
+	color: #000000;
+}
+
+.desc-list-info {
+font-family: "Rubik", "Arial", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 30px;
+color: #444444;
+}
+
+.slider-pagination-button {
+	background: #FFFFFF;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 50%;
+	display: block;
+	cursor: pointer;
+}
+
+.slider-pagination-button-current {
+	background: #000000;
 }
