@@ -14,13 +14,15 @@
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин "DEVICE"</h1>
       <div class="page-header-logo">
-        <a class="header-logo"><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145" height="36"></a>
+        <a class="header-logo"><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145"
+            height="36"></a>
       </div>
       <nav class="navigation">
         <ul class="navigation-user-list">
           <li class="navigation-user-item  navigation-user-item-search">
             <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru">
-              <input class="navigation-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <input class="navigation-search-input" id="search" type="search" name="search"
+                placeholder="Поиск по сайту">
               <button class="navigation-search-btn" type="submit">Найти</button>
               <label class="navigation-search-label" for="search">
                 <span class="visually-hidden">Поиск:</span>
@@ -78,12 +80,14 @@
       <article class="product">
         <div class="article-image">
           <img src="img/kvadrokopter.jpg" alt="Квадрокоптер" class="product-slider-image" width="560" height="560" />
-          <button class="product-slider-button product-slider-prev" type="button" hidden>
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="product-slider-button product-slider-next" type="button" hidden>
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+          <div class="image-controls">
+            <button class="product-slider-button product-slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="product-slider-button product-slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
         </div>
 
         <div class="article-description">
@@ -112,17 +116,6 @@
               </li>
             </ol>
           </div>
-
-          <!-- <table class="product-specifications">
-            <tr>
-              <td class="product-specifications-td">800 м</td>
-              <td class="product-specifications-td">50 м</td>
-            </tr>
-            <tr>
-              <th class="product-specifications-th">Дальность полета</th>
-              <th class="product-specifications-th">Радиус поражения</th>
-            </tr>
-          </table> -->
           <div class="product-specifications">
             <ul class="product-spec-list">
               <li class="spec-list-item">
@@ -249,9 +242,9 @@
       <div class="about-us-wrapper">
         <section class="about-us-delivery">
           <ul class="about-us-delivery-list">
-            <li class="about-us-list-item">
-              <img src="img/delivery_truck.svg" alt="Грузовик доставки" class="about-us-delivery-image" width="125"
-                height="100" />
+            <li class="about-us-list-item-first">
+              <img src="img/delivery_truck.svg" alt="Грузовик доставки" class="about-us-delivery-image" width="47"
+                height="31" />
             </li>
             <li class="about-us-list-text-item">
               <span class="about-us-delivery-text">Доставим редкий товар под заказ</span>
