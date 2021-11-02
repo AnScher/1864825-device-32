@@ -20,7 +20,8 @@
         <ul class="navigation-user-list">
           <li class="navigation-user-item  navigation-user-item-search">
             <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru">
-              <input class="navigation-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+              <input class="navigation-search-input" id="search" type="search" name="search"
+                placeholder="Поиск по сайту">
               <button class="navigation-search-btn" type="submit">Найти</button>
               <label class="navigation-search-label" for="search">
                 <span class="visually-hidden">Поиск:</span>
@@ -104,73 +105,81 @@
           <h3 class="sidebar-header">Фильтр:</h3>
         </div>
         <form action="https://echo.htmlacademy.ru/" class="sidebar-form" method="GET">
-          <div class="sidebar-filter-item">
+          <div class="sidebar-filter-item sidebar-filter-range">
             <fieldset class="sidebar-filter-group">
-              <legend class="sidebar-filter-title">Стоимость</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden" hidden>Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden" hidden>Изменить максимальную цену.</span>
-              </button>
-              <label class="sidebar-filter-label">от
-                <input type="number" class="sidebar-filter-input" name="min-price" />
-              </label>
-              <label class="sidebar-filter-label">до
-                <input type="number" class="sidebar-filter-input" name="max-price" />
-              </label>
+              <legend class="sidebar-filter-title sidebar-range-title">Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; right: 0px">
+                    <button class="range-toggle range-toggle-min">
+                      <span class="visually-hidden" hidden>Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle range-toggle-max">
+                      <span class="visually-hidden" hidden>Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-inputs-wrap">
+                  <label class="sidebar-range-label left-range-label">от
+                    <input type="number" class="sidebar-range-input" name="min-price" value="0" />
+                  </label>
+                  <label class="sidebar-range-label">до
+                    <input type="number" class="sidebar-range-input" name="max-price" value="5000" />
+                  </label>
+                </div>
+              </div>
             </fieldset>
           </div>
-          <div class="sidebar-filter-item">
+          <div class="sidebar-filter-item sidebar-filter-check">
             <fieldset class="sidebar-filter-group">
-              <legend class="sidebar-filter-title">Цвет</legend>
-              <ul class="sidebar-filter-list">
-                <li class="sidebar-filter-item">
-                  <label class="control">
+              <legend class="sidebar-filter-title sidebar-check-title">Цвет</legend>
+              <ul class="sidebar-check-list">
+                <li class="sidebar-check-item">
+                  <label class="check-control">
                     <input type="checkbox" class="visually-hidden control-input" name="black" checked />
-                    <span class="control-label">Черный</span>
+                    <span class="sidebar-control-label">Черный</span>
                   </label>
                 </li>
-                <li class="sidebar-filter-item">
-                  <label class="control">
+                <li class="sidebar-check-item">
+                  <label class="check-control">
                     <input type="checkbox" class="visually-hidden control-input" name="white" checked />
-                    <span class="control-label">Белый</span>
+                    <span class="sidebar-control-label">Белый</span>
                   </label>
                 </li>
-                <li class="sidebar-filter-item">
-                  <label class="control">
+                <li class="sidebar-check-item">
+                  <label class="check-control">
                     <input type="checkbox" class="visually-hidden control-input" name="blue" />
-                    <span class="control-label">Синий</span>
+                    <span class="sidebar-control-label">Синий</span>
                   </label>
                 </li>
-                <li class="sidebar-filter-item">
-                  <label class="control">
+                <li class="sidebar-check-item">
+                  <label class="check-control">
                     <input type="checkbox" class="visually-hidden control-input" name="red" />
-                    <span class="control-label">Красный</span>
+                    <span class="sidebar-control-label">Красный</span>
                   </label>
                 </li>
-                <li class="sidebar-filter-item">
-                  <label class="control">
+                <li class="sidebar-check-item">
+                  <label class="check-control">
                     <input type="checkbox" class="visually-hidden control-input" name="pink" />
-                    <span class="control-label">Розовый</span>
+                    <span class="sidebar-control-label">Розовый</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="sidebar-filter-item">
+          <div class="sidebar-filter-item sidebar-filter-radio">
             <fieldset class="sidebar-filter-group">
-              <legend class="sidebar-filter-title">Bluetooth</legend>
-              <ul class="sidebar-filter-list">
-                <li class="sidebar-filter-item">
+              <legend class="sidebar-filter-title sidebar-radio-title">Bluetooth</legend>
+              <ul class="sidebar-radio-list">
+                <li class="sidebar-radio-first-item">
                   <label class="control">
-                    <input type="radio" class="visually-hidden control-input" name="product_bluetooth_radio" />
+                    <input type="radio" class="visually-hidden control-input" name="product-bluetooth-radio" />
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
-                <li class="sidebar-filter-item">
+                <li class="sidebar-radio-item">
                   <label class="control">
-                    <input type="radio" class="visually-hidden control-input" name="product_bluetooth_radio" />
+                    <input type="radio" class="visually-hidden control-input" name="product-bluetooth-radio" />
                     <span class="control-label"> Нет </span>
                   </label>
                 </li>
@@ -212,14 +221,14 @@
             <li class="product-card">
               <img src="img/amateur-selfie-stick.jpg" alt="Любительская селфи-палка" class="product-card-image"
                 width="360" height="380" />
-                <div class="products-info">
-                  <h1 class="products-info-header">
-                    <a href="#" class="product-card-link">
-                      Любительская селфи-палка
-                    </a>
-                  </h1>
-                  <span class="product-card-price">500 ₽</span>
-                </div>
+              <div class="products-info">
+                <h1 class="products-info-header">
+                  <a href="#" class="product-card-link">
+                    Любительская селфи-палка
+                  </a>
+                </h1>
+                <span class="product-card-price">500 ₽</span>
+              </div>
               <div class="product-detailed" hidden>
                 <a href="product.html" class="button visually-hidden">Подробнее</a>
               </div>
@@ -227,29 +236,29 @@
             <li class="product-card">
               <img src="img/profy-selfie-stick.jpg" alt="Профессиональная селфи-палка" class="product-card-image"
                 width="360" height="380" />
-                <div class="products-info">
-                  <h1 class="products-info-header">
-                    <a href="#" class="product-card-link">
-                      Профессиональная селфи-палка
-                    </a>
-                  </h1>
-                  <span class="product-card-price">1500 ₽</span>
-                </div>
-                <div class="product-detailed" hidden>
-                  <a href="product.html" class="button visually-hidden">Подробнее</a>
-                </div>
+              <div class="products-info">
+                <h1 class="products-info-header">
+                  <a href="#" class="product-card-link">
+                    Профессиональная селфи-палка
+                  </a>
+                </h1>
+                <span class="product-card-price">1500 ₽</span>
+              </div>
+              <div class="product-detailed" hidden>
+                <a href="product.html" class="button visually-hidden">Подробнее</a>
+              </div>
             </li>
             <li class="product-card">
               <img src="img/unsinkable-selfie-stick.jpg" alt="Непотопляемая селфи-палка" class="product-card-image"
                 width="360" height="380" />
-                <div class="products-info">
-                  <h1 class="products-info-header">
-                    <a href="#" class="product-card-link">
-                      Непотопляемая селфи-палка
-                    </a>
-                  </h1>
-                  <span class="product-card-price">2500 ₽</span>
-                </div>
+              <div class="products-info">
+                <h1 class="products-info-header">
+                  <a href="#" class="product-card-link">
+                    Непотопляемая селфи-палка
+                  </a>
+                </h1>
+                <span class="product-card-price">2500 ₽</span>
+              </div>
               <div class="product-detailed" hidden>
                 <a href="product.html" class="button visually-hidden">Подробнее</a>
               </div>
@@ -257,14 +266,14 @@
             <li class="product-card">
               <img src="img/follow-me-selfie-stick.jpg" alt="Селфи-палка «Следуй за мной»" class="product-card-image"
                 width="360" height="380" />
-                <div class="products-info">
-                  <h1 class="products-info-header">
-                    <a href="#" class="product-card-link">
-                      Селфи-палка «Следуй за мной»
-                    </a>
-                  </h1>
-                  <span class="product-card-price">4900 ₽</span>
-                </div>
+              <div class="products-info">
+                <h1 class="products-info-header">
+                  <a href="#" class="product-card-link">
+                    Селфи-палка «Следуй за мной»
+                  </a>
+                </h1>
+                <span class="product-card-price">4900 ₽</span>
+              </div>
               <div class="product-detailed" hidden>
                 <a href="product.html" class="button visually-hidden">Подробнее</a>
               </div>
