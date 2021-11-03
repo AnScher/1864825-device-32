@@ -104,7 +104,7 @@
         <div class="sidebar-title-wrap">
           <h3 class="sidebar-header">Фильтр:</h3>
         </div>
-        <form action="https://echo.htmlacademy.ru/" class="sidebar-form" method="GET">
+        <form action="https://echo.htmlacademy.ru/" class="sidebar-form" method="get">
           <div class="sidebar-filter-item sidebar-filter-range">
             <fieldset class="sidebar-filter-group">
               <legend class="sidebar-filter-title sidebar-range-title">Стоимость</legend>
@@ -136,31 +136,38 @@
               <ul class="sidebar-check-list">
                 <li class="sidebar-check-item">
                   <label class="check-control">
-                    <input type="checkbox" class="visually-hidden control-input" name="black" checked />
+                    <input type="checkbox" class="visually-hidden control-input" name="black" id="filter-check-black"
+                      checked />
+                    <span class="control-mark"></span>
                     <span class="sidebar-control-label">Черный</span>
                   </label>
                 </li>
                 <li class="sidebar-check-item">
                   <label class="check-control">
-                    <input type="checkbox" class="visually-hidden control-input" name="white" checked />
+                    <input type="checkbox" class="visually-hidden control-input" name="white" id="filter-check-white"
+                      checked />
+                    <span class="control-mark"></span>
                     <span class="sidebar-control-label">Белый</span>
                   </label>
                 </li>
                 <li class="sidebar-check-item">
                   <label class="check-control">
-                    <input type="checkbox" class="visually-hidden control-input" name="blue" />
+                    <input type="checkbox" class="visually-hidden control-input" name="blue" id="filter-check-blue" />
+                    <span class="control-mark"></span>
                     <span class="sidebar-control-label">Синий</span>
                   </label>
                 </li>
                 <li class="sidebar-check-item">
                   <label class="check-control">
-                    <input type="checkbox" class="visually-hidden control-input" name="red" />
+                    <input type="checkbox" class="visually-hidden control-input" name="red" id="filter-check-red" />
+                    <span class="control-mark"></span>
                     <span class="sidebar-control-label">Красный</span>
                   </label>
                 </li>
                 <li class="sidebar-check-item">
                   <label class="check-control">
-                    <input type="checkbox" class="visually-hidden control-input" name="pink" />
+                    <input type="checkbox" class="visually-hidden control-input" name="pink" id="filter-check-pink" />
+                    <span class="control-mark"></span>
                     <span class="sidebar-control-label">Розовый</span>
                   </label>
                 </li>
@@ -171,16 +178,19 @@
             <fieldset class="sidebar-filter-group">
               <legend class="sidebar-filter-title sidebar-radio-title">Bluetooth</legend>
               <ul class="sidebar-radio-list">
-                <li class="sidebar-radio-first-item">
-                  <label class="control">
-                    <input type="radio" class="visually-hidden control-input" name="product-bluetooth-radio" />
+                <li class="sidebar-radio-item radio-first-item">
+                  <label class="radio-control">
+                    <input type="radio" class="visually-hidden control-input" id="bluetooth-radio-yes" name="radio"
+                      checked />
+                    <span class="control-mark-radio"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="sidebar-radio-item">
-                  <label class="control">
-                    <input type="radio" class="visually-hidden control-input" name="product-bluetooth-radio" />
-                    <span class="control-label"> Нет </span>
+                  <label class="radio-control">
+                    <input type="radio" class="visually-hidden control-input" name="radio" id="bluetooth-radio-no" />
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Нет</span>
                   </label>
                 </li>
               </ul>
@@ -193,12 +203,16 @@
       <div class="product-cards-container">
         <section class="sorting-products">
           <h3 class="catalog-form-header">Сортировка:</h3>
-          <label for="sorting" class="visually-hidden" hidden>Сортировка</label>
-          <select class="select-control" name="sorting" id="sorting">
-            <option value="popular-first">Сначала популярные</option>
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+          <form action="https://echo.htmlacademy.ru/" class="sorting-form" method="get">
+            <div class="sorting-select">
+              <label for="sorting" class="visually-hidden" hidden>Сортировка</label>
+              <select class="select-control" name="sorting" id="sorting">
+                <option value="popular-first">Сначала популярные</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
+          </form>
           <ul class="sorting-updown-list">
             <li class="updown-list-item">
               <a href="#">

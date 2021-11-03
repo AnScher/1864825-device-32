@@ -364,7 +364,7 @@ a {
 }
 
 .inner-menu-list-link {
-	font-family: Rubik;
+	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -471,10 +471,6 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* position: absolute;
-	z-index: 1;
-	right: 82px;
-  bottom: 253px; */
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -504,10 +500,7 @@ a {
 }
 
 .glasses {
-	padding-top: 53px;
-	padding-right: 31px;
-	padding-left: 32px;
-	padding-bottom: 52px;
+  padding: 53px 31px 52px 32px;
 }
 
 .monopod {
@@ -517,31 +510,19 @@ a {
 }
 
 .action-camera {
-	padding-top: 38px;
-	padding-right: 40px;
-	padding-left: 49px;
-	padding-bottom: 35px;
+  padding: 38px 40px 35px 49px;
 }
 
 .fitness {
-	padding-top: 50px;
-	padding-right: 27px;
-	padding-left: 26px;
-	padding-bottom: 45px;
+  padding: 50px 27px 45px 26px;
 }
 
 .smart {
-	padding-top: 31px;
-	padding-right: 51px;
-	padding-left: 53px;
-	padding-bottom: 31px;
+  padding: 31px 51px 31px 53px;
 }
 
 .kvadro {
-	padding-top: 49px;
-	padding-right: 14px;
-	padding-left: 14px;
-	padding-bottom: 42px;
+  padding: 49px 14px 42px;
 }
 
 .services-list-name {
@@ -839,7 +820,7 @@ a {
 }
 
 .contacts-address-phone {
-	font-family: Rubik;
+	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -997,12 +978,63 @@ a {
 	font-family: "Rubik", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 19px;
-	padding-left: 17px;
   position: relative;
 }
 
 .sidebar-check-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.check-control, .radio-control {
+	display: block;
+	position: relative;
+	padding-left: 38px;
+}
+
+.control-mark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;	
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.control-mark-radio {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 20px;
+	height: 20px;	
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+	position: absolute;
+	content: "";
+	top: 3px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	background-image: url("../img/galka.svg");
+	background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark-radio {
+	border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	border-radius: 50%;
+	content: "";
 }
 
 .sidebar-filter-button {
@@ -1095,7 +1127,7 @@ a {
 }
 
 .pagination-link {
-	font-family: "Rubik";
+	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -1119,7 +1151,7 @@ a {
 }
 
 .pagination-inner-link {
-	font-family: "Rubik";
+	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -1170,7 +1202,7 @@ a {
 }
 
 .sidebar-filter-title {
-	font-family: "Rubik";
+	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -1299,7 +1331,7 @@ a {
   list-style-type: none;
 }
 
-.sidebar-radio-first-item {
+.radio-first-item {
   margin-bottom: 21px;
 }
 
@@ -1312,6 +1344,31 @@ a {
 	margin-right: 25px;
 	padding: 0;
 	width: 535px;
+}
+
+.sorting-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 195px;
+  margin-right: auto;
+}
+
+.select-control {
+  width: 100%;
+  padding: 4px 2px;
+  background-color: #EBEBEB;
+  border: none;
+  background-image: url(../img/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  appearance: none;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 
 .header-container {
@@ -1355,9 +1412,7 @@ a {
 	height: 5px;
 	transform: rotate(45deg);
 	border-top: 1px solid #000000;
-	;
 	border-right: 1px solid #000000;
-	;
 }
 
 .breadcrumbs-item:nth-child(2)::after {
@@ -1586,7 +1641,6 @@ a {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
-	/* basic/white */
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
@@ -1616,7 +1670,6 @@ a {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	text-decoration: none;
-	/* basic/white */
 	color: #FFFFFF;
 }
 
@@ -1633,7 +1686,6 @@ a {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 30px;
-	/* or 187% */
 	text-align: right;
 	color: #FFFFFF;
 	text-decoration: none;
@@ -1696,7 +1748,6 @@ a {
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 30px;
-	/* or 83% */
 	color: #000000;
 }
 
