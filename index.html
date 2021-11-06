@@ -535,20 +535,27 @@
       <section class="modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
         <form action="https://echo.htmlacademy.ru/" class="modal-form" method="post">
-          <label for="customer-name" class="modal-form-label">Ваше имя:
-            <input type="text" placeholder="Имя Фамилия" name="customer-name" id="customer-name" required>
+          <label for="customer-name" class="modal-form-label modal-form-name">
+            <span class="customer-lable-title">Ваше имя:</span>
+            <input class="modal-input modal-input-name" type="text" placeholder="Имя Фамилия" name="customer-name" id="customer-name" required>
+            <span class="modal-name-subtext">Пожалуйста, представьтесь</span>
           </label>
-          <label for="customer-email" class="modal-form-label">Ваш e-mail:
-            <input type="text" placeholder="krasotka92@mail.ru" name="customer-email" id="customer-email">
+          <label for="customer-email" class="modal-form-label modal-form-email">
+            <span class="customer-lable-title">Ваш e-mail:</span>
+            <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru" name="customer-email" id="customer-email" required>
+            <span class="modal-email-subtext">Забавный у вас адрес</span>
           </label>
-          <label for="customer-order" class="modal-form-label">Что нужно привезти:
-            <input type="text" placeholder="В свободной форме" name="customer-order" id="customer-order">
+          <label for="customer-order" class="modal-form-label modal-form-order">
+            <span class="customer-lable-title">Что нужно привезти:</span>
+            <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме" name="customer-order" id="customer-order">
           </label>
-          <label for="order-quantity" class="modal-form-label">Количество:
-            <input type="text" placeholder="1" name="order-quantity" id="order-quantity">
+          <label for="order-quantity" class="modal-form-label modal-form-quantity">
+            <span class="customer-lable-title">Количество:</span>
+            <input class="modal-input modal-input-quantity" type="number" placeholder="1" name="order-quantity" id="order-quantity" required>
           </label>
         </form>
-        <button class="modal-send-btn">Отправить</button>
+        <a class="modal-send-link">Отправить</a>
+
       </section>
     </div>
   </div>
