@@ -40,16 +40,16 @@
           </li>
         </ul>
 
-        <div class="popover popover-cart" hidden>
+        <div class="popover popover-cart">
           <h2 class="visually-hidden">Корзина</h2>
           <ul class="popover-cart-items">
             <li class="popover-item popover-item-first">
-              <img src="/img/product-1-small.jpg" alt="Товар в корзине" class="popover-item-image" width="41"
+              <img src="img/product-1-small.jpg" alt="Товар в корзине" class="popover-item-image" width="41"
                 height="43">
               <p class="popover-item-name popover-item-name-first">Любительская селфи-палка</p>
             </li>
             <li class="popover-item popover-item-second">
-              <img src="/img/product-2-small.jpg" alt="Товар в корзине" class="popover-item-image" width="41"
+              <img src="img/product-2-small.jpg" alt="Товар в корзине" class="popover-item-image" width="41"
                 height="43">
               <p class="popover-item-name popover-item-name-second">Профессиональная
                 селфи-палка</p>
@@ -316,7 +316,7 @@
             <img src="img/fitness-bracelet.svg" alt="Фитнес браслет" width="107" height="65" />
           </div>
           <a href="#" class="categories-list-item-link">
-            Фитнес-браслет
+            Фитнес-браслеты
           </a>
         </li>
         <li class="categories-list-item">
@@ -537,25 +537,30 @@
         <form action="https://echo.htmlacademy.ru/" class="modal-form" method="post">
           <label for="customer-name" class="modal-form-label modal-form-name">
             <span class="customer-lable-title">Ваше имя:</span>
-            <input class="modal-input modal-input-name" type="text" placeholder="Имя Фамилия" name="customer-name" id="customer-name" required>
+            <input class="modal-input modal-input-name" type="text" placeholder="Имя Фамилия" name="customer-name"
+              id="customer-name" required>
+            <span class="modal-input-image modal-input-image-user"></span>
             <span class="modal-name-subtext">Пожалуйста, представьтесь</span>
           </label>
           <label for="customer-email" class="modal-form-label modal-form-email">
             <span class="customer-lable-title">Ваш e-mail:</span>
-            <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru" name="customer-email" id="customer-email" required>
+            <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru"
+              name="customer-email" id="customer-email" required>
+            <span class="modal-input-image modal-input-image-email"></span>
             <span class="modal-email-subtext">Забавный у вас адрес</span>
           </label>
           <label for="customer-order" class="modal-form-label modal-form-order">
             <span class="customer-lable-title">Что нужно привезти:</span>
-            <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме" name="customer-order" id="customer-order">
+            <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме"
+              name="customer-order" id="customer-order">
           </label>
           <label for="order-quantity" class="modal-form-label modal-form-quantity">
             <span class="customer-lable-title">Количество:</span>
-            <input class="modal-input modal-input-quantity" type="number" placeholder="1" name="order-quantity" id="order-quantity" required>
+            <input class="modal-input modal-input-quantity" type="number" placeholder="1" name="order-quantity"
+              id="order-quantity" required>
           </label>
         </form>
         <a class="modal-send-link">Отправить</a>
-
       </section>
     </div>
   </div>
