@@ -555,12 +555,35 @@
               name="customer-order" id="customer-order">
           </label>
           <label for="order-quantity" class="modal-form-label modal-form-quantity">
-            <span class="customer-lable-title">Количество:</span>
-            <input class="modal-input modal-input-quantity" type="number" placeholder="1" name="order-quantity"
-              id="order-quantity" required>
+            <div class="order-quantity-header">
+              <span class="customer-lable-title">Количество:</span>
+              <span class="customer-lable-mark"></span>
+            </div>
+
+            <div class="order-quantity-popover">
+              <h2 class="visually-hidden">Справка</h2>
+              <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                к провозу багажа.</p>
+            </div>
+
+            <div class="order-quantity-content">
+              <input class="modal-input modal-input-quantity" type="text" placeholder="1" name="order-quantity"
+              id="order-quantity">
+              <div class="quantity-controls">
+                <button class="quantity-control-minus" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <button class="quantity-control-plus" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            </div>
           </label>
         </form>
-        <a class="modal-send-link">Отправить</a>
+        <div class="modal-send-link-wrap">
+          <a class="modal-send-link">Отправить</a>
+        </div>
+        
       </section>
     </div>
   </div>
