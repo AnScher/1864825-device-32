@@ -339,46 +339,47 @@
     </section>
     <section class="services">
       <h2 class="visually-hidden" hidden>Сервисы</h2>
-      <div class="services-background">
-        <div class="services-delivery">
-          <h3 class="services-subtitle">Доставка</h3>
-          <ul class="services-list-name">
-            <li class="services-list-name-delivery-item">
-              <a href="#" class="services-list-name-link">
-                Доставка
-              </a>
-            </li>
-            <li class="services-list-name-varrancy-item">
-              <a href="#" class="services-list-name-link">
-                Гарантия
-              </a>
-            </li>
-            <li class="services-list-name-item">
-              <a href="#" class="services-list-name-link">
-                Кредит
-              </a>
-            </li>
-          </ul>
-          <ul class="services-list-desc" hidden>
-            <li class="services-list-desc-item">
-              <p class="service-description-active">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-                этаж.
-              </p>
-              <img src="img/delivery-guy.png" alt="Курьер с посылкой" class="service-description-image">
-            </li>
-            <li class="services-list-desc-item">
-              <p class="service-description">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </li>
-            <li class="services-list-desc-item">
-              <p class="service-description">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </li>
-          </ul>
+      <div class="services-wrapper">
+        <div class="services-content">
+
+          <input type="text" class="services-slider-input visually-hidden" id="services-control-1" type="radio"
+            name="services-control" checked>
+          <input type="text" class="services-slider-input visually-hidden" id="services-control-2" type="radio"
+            name="services-control">
+          <input type="text" class="services-slider-input visually-hidden" id="services-control-3" type="radio"
+            name="services-control">
+
+          <div class="services-slider-item services-slider-item-active services-slider-item-delivery">
+            <h3 class="services-subtitle">Доставка</h3>
+            <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="services-slider-item services-slider-item-warranty">
+            <h3 class="services-subtitle">Гарантия</h3>
+            <p class="services-slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+              переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </div>
+          <div class="services-slider-item services-slider-item-credit">
+            <h3 class="services-subtitle">Кредит</h3>
+            <p class="services-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия кредита. Выгодные
+              для банка, разумеется.</p>
+          </div>
+
+          <div class="services-slider-controls">
+            <label for="services-control-1" class="services-slider-control services-slider-control-active">
+              Доставка
+            </label>
+            <label for="services-control-2" class="services-slider-control services-slider-control">
+              Гарантия
+            </label>
+            <label for="services-control-3" class="services-slider-control services-slider-control">
+              Кредит
+            </label>
+          </div>
+
         </div>
       </div>
     </section>
@@ -562,13 +563,14 @@
 
             <div class="order-quantity-popover">
               <h2 class="visually-hidden">Справка</h2>
-              <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+              <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                требованиям
                 к провозу багажа.</p>
             </div>
 
             <div class="order-quantity-content">
               <input class="modal-input modal-input-quantity" type="text" placeholder="1" name="order-quantity"
-              id="order-quantity">
+                id="order-quantity">
               <div class="quantity-controls">
                 <button class="quantity-control-minus" type="button">
                   <span class="visually-hidden">Уменьшить</span>
@@ -583,7 +585,7 @@
         <div class="modal-send-link-wrap">
           <a class="modal-send-link">Отправить</a>
         </div>
-        
+
       </section>
     </div>
   </div>
