@@ -32,7 +32,6 @@
 
 html {
 	box-sizing: border-box;
-	overflow-x: hidden
 }
 
 *,
@@ -43,15 +42,15 @@ html {
 
 body {
 	min-width: 1160px;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
 	padding-top: 40px;
-	overflow-x: hidden;
 	font-family: "Rubik", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 30px;
-	color: black;
-	background-color: #fff
+	color: #000;
+	background-color: #fff;
 }
 
 a {
@@ -87,10 +86,7 @@ a {
 }
 
 .navigation {
-	padding-top: 28px;
-	padding-right: 60px;
-	padding-bottom: 160px;
-	padding-left: 60px;
+	padding: 28px 60px 160px 60px;
 }
 
 .catalog-navigation {
@@ -553,6 +549,10 @@ a {
 .product {
 	display: flex;
 }
+
+/* .product-2, .product-3 {
+	display: none;
+} */
 
 .products-description-link {
 	font-family: "Raleway", "Arial", sans-serif;
@@ -1071,7 +1071,7 @@ a {
 	position: absolute;
 	display: block;
 	left: -2px;
-	bottom: 6px;
+	bottom: 8px;
 	z-index: -1;
 	width: inherit;
 	height: 8px;
@@ -1673,6 +1673,7 @@ a {
 
 .breadcrumbs-list {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -1752,6 +1753,9 @@ a {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: #000000;
+	max-height: 77px;
+	overflow: auto;
+	word-wrap: break-word;
 }
 
 .sidebar-filter-range {
@@ -1860,14 +1864,11 @@ a {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 44px;
 }
 
 .product-card {
 	width: 360px;
-}
-
-.product-card:nth-child(2n) {
-	margin-right: 0;
 }
 
 .load-more-link-wrap {
@@ -1877,7 +1878,6 @@ a {
 	border: 3px solid #000000;
 	box-sizing: border-box;
 	margin-bottom: 51px;
-	margin-top: 44px;
 }
 
 .pagination-list {
@@ -2006,7 +2006,7 @@ a {
 }
 
 .product-specifications {
-	width: 440px;
+	max-width: 440px;
 }
 
 .product-spec-list,
@@ -2029,6 +2029,7 @@ a {
 	font-size: 36px;
 	line-height: 30px;
 	color: #000000;
+	word-wrap: break-word;
 }
 
 .desc-list-info {
@@ -2038,6 +2039,7 @@ a {
 	font-size: 16px;
 	line-height: 30px;
 	color: #444444;
+	word-wrap: break-word;
 }
 
 .slider-pagination-button {
@@ -2398,7 +2400,7 @@ a {
 	background-image: url("../img/quantity-plus.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-color: #F0F0F0;
+	background-color: transparent;
 	border: none;
 	cursor: pointer;
 }
