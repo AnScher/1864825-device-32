@@ -1856,8 +1856,11 @@ a {
 }
 
 .products-list {
-	display: flex;
-	flex-wrap: wrap;
+
+	display: grid;
+	grid-template-columns: 360px 360px;
+	column-gap: 40px;
+	row-gap: 44px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -1865,8 +1868,6 @@ a {
 
 .product-card {
 	width: 360px;
-	margin-right: 40px;
-	margin-bottom: 44px;
 }
 
 .product-card:nth-child(2n) {
@@ -1880,6 +1881,7 @@ a {
 	border: 3px solid #000000;
 	box-sizing: border-box;
 	margin-bottom: 51px;
+	margin-top: 44px;
 }
 
 .pagination-list {
