@@ -438,10 +438,15 @@ a {
 	cursor: pointer;
 }
 
+.main-navigation-list-link-catalog {
+	position: relative;
+}
+
 .main-navigation-list-link-catalog::before {
 	content: "";
 	position: absolute;
-	top: 6px;
+	top: 50%;
+	transform: translateY(-50%);
 	left: 260px;
 	width: 16px;
 	height: 16px;
@@ -456,7 +461,8 @@ a {
 	content: "";
 	position: absolute;
 	left: 243px;
-	top: -10px;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 50px;
 	height: 50px;
 	background: #FFE17F;
@@ -464,6 +470,7 @@ a {
 	border: 2px solid #000000;
 	box-sizing: border-box;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .main-navigation-inner-menu {
