@@ -269,16 +269,12 @@ a {
 .navigation-search {
 	position: relative;
 	display: flex;
-	justify-content: space-between;
-	width: 440px;
+	width: 480px;
 }
 
 .navigation-search-input {
 	position: relative;
 	width: 320px;
-	height: 20px;
-	margin-left: 10px;
-	padding: 0;
 	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -288,13 +284,17 @@ a {
 	color: #000000;
 	opacity: 0.3;
 	border: 0;
-	outline: 0;
+}
+
+.navigation-search-input:hover {
+	opacity: 0.6;
 }
 
 .navigation-search-label {
 	position: absolute;
-	top: 2px;
-	left: -24px;
+	top: 50%;
+	transform: translateY(-40%);
+	left: -30px;
 	width: 20px;
 	height: 20px;
 	background-image: url(../img/search.svg);
@@ -302,27 +302,24 @@ a {
 	cursor: pointer;
 }
 
-.navigation-search-btn:hover {
-	background: #000000;
+.navigation-search-btn {
+	position: relative;
+	width: 160px;
+	padding: 0;
+	font-family: "Rubik", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #000000;
+	background-color: transparent;
 	border: 2px solid #000000;
 	box-sizing: border-box;
 	border-radius: 0px 20px 20px 0px;
-}
-
-.navigation-search-btn:focus {
-	border: 2px solid #AF4FFF;
-	box-sizing: border-box;
-	border-radius: 0px 20px 20px 0px;
-}
-
-.navigation-search-btn:active {
-	border: 2px solid #000000;
-	box-sizing: border-box;
-	border-radius: 0px 20px 20px 0px;
-}
-
-.navigation-search-btn:focus~.navigation-search-label::before {
-	display: block;
+	outline: 0;
+	cursor: pointer;
+	/* display: none; */
 }
 
 .navigation-user-link {
@@ -330,65 +327,72 @@ a {
 	color: #000;
 }
 
-.navigation-user-link:hover {
-	opacity: .6;
-}
-
-.navigation-user-link:hover::before {
-	opacity: .6;
-}
-
-.navigation-user-link:active {
-	opacity: .3;
-}
-
-.navigation-user-link:active::before {
-	opacity: .3;
-}
-
-.navigation-user-link::before {
+.navigation-user-link-login::before {
 	content: "";
 	position: absolute;
 	width: 13px;
 	height: 12px;
 	background-repeat: no-repeat;
-}
-
-.navigation-user-link-login::before {
 	bottom: 4px;
 	left: -26px;
 	background-image: url(../img/user-enter.svg);
 }
 
 .navigation-user-link-profile::before {
+	content: "";
+	position: absolute;
+	width: 13px;
+	height: 12px;
+	background-repeat: no-repeat;
 	bottom: 4px;
 	left: -26px;
 	background-image: url(../img/compare.svg);
 }
 
 .navigation-user-link-compare::before {
+	content: "";
+	position: absolute;
+	width: 13px;
+	height: 12px;
+	background-repeat: no-repeat;
 	bottom: 4px;
-	left: -20px;
+	left: -26px;
 	background-image: url(../img/compare.svg);
 }
 
 .navigation-user-link-cart::before {
+	content: "";
+	position: absolute;
+	width: 13px;
+	height: 12px;
+	background-repeat: no-repeat;
 	bottom: 4px;
-	left: -23px;
+	left: -26px;
 	background-image: url(../img/cart.svg);
+}
+
+.navigation-user-link-cart::after {
+	content: "2";
+	position: absolute;
+	font-family: "Rubik", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	background-color: white;
+	border-radius: 50%;
+	width: 21px;
+	height: 21px;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	left: -40px;
 }
 
 .navigation-user-link-logout {
 	margin-left: 15px;
 	color: rgba(0, 0, 0, .3);
-}
-
-.navigation-user-link-logout:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.navigation-user-link-logout:active {
-	color: rgba(0, 0, 0, .1);
 }
 
 .main-navigation-list {
@@ -434,22 +438,6 @@ a {
 	cursor: pointer;
 }
 
-.main-navigation-list-link:hover {
-	opacity: .6;
-}
-
-.main-navigation-list-link:active {
-	opacity: .3;
-}
-
-.main-navigation-list-link-contacts {
-	margin-right: -.2em;
-}
-
-.main-navigation-list-link-catalog {
-	margin-right: 17px;
-}
-
 .main-navigation-list-link-catalog::before {
 	content: "";
 	position: absolute;
@@ -467,6 +455,7 @@ a {
 .main-nav-catalog-mark {
 	content: "";
 	position: absolute;
+	left: 243px;
 	top: -10px;
 	width: 50px;
 	height: 50px;
@@ -1193,8 +1182,6 @@ a {
 .page-footer {
 	padding-top: 63px;
 	padding-bottom: 61px;
-	padding-left: 139px;
-	padding-right: 140px;
 	background-color: #444444;
 	color: white;
 }
@@ -1858,7 +1845,7 @@ a {
 
 .products-list {
 	display: grid;
-	grid-template-columns: 360px 360px;
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 40px;
 	row-gap: 44px;
 	list-style-type: none;
