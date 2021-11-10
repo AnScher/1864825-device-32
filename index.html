@@ -14,7 +14,7 @@
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
       <div class="page-header-logo">
-        <a href="#" class="header-logo"><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145"
+        <a class="header-logo"><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145"
             height="36"></a>
       </div>
       <nav class="navigation">
@@ -532,7 +532,7 @@
   <div class="modal-container modal-container-close">
     <div class="modal">
       <span class="visually-hidden">Закрыть</span>
-      <button class="modal-close-btn"></button>
+      <button class="modal-close-btn" type="button"></button>
       <section class="modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
         <form action="https://echo.htmlacademy.ru/" class="modal-form" method="post">
@@ -555,37 +555,30 @@
             <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме"
               name="customer-order" id="customer-order">
           </label>
-          <label for="order-quantity" class="modal-form-label modal-form-quantity">
-            <div class="order-quantity-header">
+          <div class="order-quantity-content">
+            <label for="order-quantity" class="modal-form-label modal-form-quantity">
               <span class="customer-lable-title">Количество:</span>
-              <span class="customer-lable-mark"></span>
-            </div>
-
-            <div class="order-quantity-popover">
-              <h2 class="visually-hidden">Справка</h2>
-              <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по
-                требованиям
-                к провозу багажа.</p>
-            </div>
-
-            <div class="order-quantity-content">
+              <span class="customer-lable-mark"></span>           
               <input class="modal-input modal-input-quantity" type="text" placeholder="1" name="order-quantity"
-                id="order-quantity">
-              <div class="quantity-controls">
-                <button class="quantity-control-minus" type="button">
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-                <button class="quantity-control-plus" type="button">
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-              </div>
+              id="order-quantity">
+            </label>
+            <div class="quantity-controls">
+              <span class="quantity-control-minus"></span>
+              <span class="visually-hidden">Уменьшить</span>
+              <span class="quantity-control-plus"></span>
+              <span class="visually-hidden">Увеличить</span>
             </div>
-          </label>
+          </div>
+          <div class="order-quantity-popover">
+            <h2 class="visually-hidden">Справка</h2>
+            <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+              требованиям к провозу багажа.
+            </p>
+          </div>
         </form>
         <div class="modal-send-link-wrap">
-          <a class="modal-send-link">Отправить</a>
+          <a href="#" class="modal-send-link">Отправить</a>
         </div>
-
       </section>
     </div>
   </div>

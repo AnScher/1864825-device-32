@@ -2146,6 +2146,40 @@ a {
 	cursor: pointer;
 }
 
+.modal-close-btn:hover {
+	opacity: 0.6;
+}
+
+.modal-close-btn:focus {
+	display: block;
+	border: 5px solid #AF4FFF;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.modal-close-btn:active {
+	opacity: 0.3;
+}
+
+.modal-input:hover {
+	background-color: #EBEBEB;;
+}
+
+.modal-input:focus {
+	background: #F0F0F0;
+	border: 5px solid #AF4FFF;
+}
+
+.modal-input:active {
+	background: #FFFFFF;
+	border: 3px solid #000000;
+	box-sizing: border-box;
+	opacity: 1;
+	color: black;
+}
+
+
+
 .modal-form {
 	margin-bottom: 54px;
 	display: flex;
@@ -2341,6 +2375,10 @@ a {
 	right: 12px;
 }
 
+.modal-form-quantity {
+	position: relative;
+}
+
 .order-quantity-popover {
 	display: none;
 	width: 200px;
@@ -2367,12 +2405,12 @@ a {
 
 .quantity-controls {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	transform: translateY(-50%);
+	transform: translateY(-60%);
 	padding-right: 19px;
 	padding-left: 19px;
 }
@@ -2386,6 +2424,7 @@ a {
 	background-color: #F0F0F0;
 	border: none;
 	cursor: pointer;
+	opacity: 0.3;
 }
 
 .quantity-control-plus {
@@ -2397,8 +2436,25 @@ a {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	opacity: 0.3;
 }
 
-.modal-container-close {
-	display: none;
+.quantity-control-minus:hover, .quantity-control-plus:hover {
+	opacity: 1;
+	color: black;
 }
+
+.quantity-control-minus:focus, .quantity-control-plus:focus {
+	background-color: white;
+	opacity: 0.1;
+	border: 2px solid #AF4FFF;
+	box-sizing: border-box;
+	background-repeat: 50%;
+}
+
+.quantity-control-minus:active, .quantity-control-plus:active {
+	opacity: 0.1;
+}
+/* .modal-container-close {
+	display: none;
+} */
