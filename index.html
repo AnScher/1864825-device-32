@@ -14,7 +14,7 @@
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
       <div class="page-header-logo">
-        <a class="header-logo"><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145"
+        <a href="#" class="header-logo"><img src="img/logo-full.svg" alt="Логотип интернет-магазина Device" width="145"
             height="36"></a>
       </div>
       <nav class="navigation">
@@ -44,15 +44,20 @@
           <h2 class="visually-hidden">Корзина</h2>
           <ul class="popover-cart-items">
             <li class="popover-item popover-item-first">
-              <img src="img/product-1-small.jpg" alt="Товар в корзине" class="popover-item-image" width="41"
-                height="43">
-              <p class="popover-item-name popover-item-name-first">Любительская селфи-палка</p>
+              <a href="#" class="popover-item-image-wrap">
+                <img src="img/product-1-small.jpg" alt="Товар в корзине" width="41" height="43"
+                  class="popover-item-image">
+                <span class="popover-item-name popover-item-name-first">Любительская <br>селфи-палка</span>
+              </a>
+              <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
             </li>
             <li class="popover-item popover-item-second">
-              <img src="img/product-2-small.jpg" alt="Товар в корзине" class="popover-item-image" width="41"
-                height="43">
-              <p class="popover-item-name popover-item-name-second">Профессиональная
-                селфи-палка</p>
+              <a href="#" class="popover-item-image-wrap">
+                <img src="img/product-2-small.jpg" alt="Товар в корзине" width="41" height="43"
+                  class="popover-item-image">
+                <p class="popover-item-name popover-item-name-second">Профессиональная селфи-палка</p>
+              </a>
+              <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
             </li>
           </ul>
           <div class="popover-cart-summary">
@@ -123,7 +128,7 @@
             замаскированным под стандартную камеру.
           </p>
           <div class="pagination">
-            <a href="#" class="products-description-link">Подробнее</a>
+            <a href="#" class="btn">Подробнее</a>
             <ol class="product-slider-pagination">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current">
@@ -182,7 +187,7 @@
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
           <div class="pagination">
-            <a href="#" class="products-description-link">Подробнее</a>
+            <a href="#" class="btn">Подробнее</a>
             <ol class="product-slider-pagination">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button">
@@ -236,7 +241,7 @@
             5 кг.
           </p>
           <div class="pagination">
-            <a href="#" class="products-description-link">Подробнее</a>
+            <a href="#" class="btn">Подробнее</a>
             <ol class="product-slider-pagination">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button">
@@ -419,7 +424,7 @@
               <li class="about-us-description-list-item">СДИК</li>
               <li class="about-us-description-list-item">Токсберри</li>
             </ul>
-            <a href="#" class="about-us-description-link">
+            <a href="#" class="btn">
               Подробнее о нас
             </a>
           </section>
@@ -439,7 +444,7 @@
               <li class="about-us-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="about-us-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a href="#" class="about-us-description-link">
+            <a href="#" class="btn">
               Напишите нам
             </a>
           </section>
@@ -558,9 +563,8 @@
           <div class="order-quantity-content">
             <label for="order-quantity" class="modal-form-label modal-form-quantity">
               <span class="customer-lable-title">Количество:</span>
-              <span class="customer-lable-mark"></span>           
               <input class="modal-input modal-input-quantity" type="text" placeholder="1" name="order-quantity"
-              id="order-quantity">
+                id="order-quantity">
             </label>
             <div class="quantity-controls">
               <span class="quantity-control-minus"></span>
@@ -571,14 +575,12 @@
           </div>
           <div class="order-quantity-popover">
             <h2 class="visually-hidden">Справка</h2>
-            <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по
-              требованиям к провозу багажа.
+            <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+              к провозу багажа.
             </p>
           </div>
         </form>
-        <div class="modal-send-link-wrap">
-          <a href="#" class="modal-send-link">Отправить</a>
-        </div>
+        <a href="#" class="btn">Отправить</a>
       </section>
     </div>
   </div>
