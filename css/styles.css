@@ -105,7 +105,7 @@ a {
 }
 
 .navigation-user-item {
-	padding-top: 15px;
+	padding-top: 17px;
 	padding-bottom: 15px;
 	padding-left: 27px;
 }
@@ -123,6 +123,7 @@ a {
 .navigation-user-item-compare {
 	width: 110px;
 	margin-right: 20px;
+	padding-left: 20px;
 }
 
 .navigation-user-item-cart {
@@ -140,7 +141,7 @@ a {
 	background: #000000;
 	color: #FFFFFF;
 	box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
-	/* display: none; */
+	display: none;
 }
 
 .popover-cart {
@@ -247,6 +248,12 @@ a {
 
 .popover-item-image {
 	margin-right: 23px;
+}
+
+.popover-item-image::before {
+	content: "";
+	position: absolute;
+
 }
 
 .popover-cart-summary {
@@ -389,7 +396,12 @@ a {
 
 .navigation-user-link {
 	position: relative;
-	color: #000;
+	font-family: "Rubik", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
 }
 
 .navigation-user-link-login::before {
@@ -421,7 +433,7 @@ a {
 	height: 12px;
 	background-repeat: no-repeat;
 	bottom: 4px;
-	left: -26px;
+	left: -23px;
 	background-image: url(../img/compare.svg);
 }
 
@@ -463,7 +475,7 @@ a {
 .main-navigation-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -490,15 +502,17 @@ a {
 }
 
 .main-navigation-list-item-delivery {
-	width: 158px;
+	width: 140px;
+	margin-right: 19px;
 }
 
 .main-navigation-list-item-warranty {
-	width: 162px;
+	width: 140px;
+	margin-right: 71px;
 }
 
 .main-navigation-list-item-contacts {
-	width: 180px;
+	width: 130px;
 	text-align: right;
 }
 
@@ -622,9 +636,9 @@ a {
 	display: flex;
 }
 
-/* .product-2, .product-3 {
+.product-2, .product-3 {
 	display: none;
-} */
+}
 
 .btn {
 	font-family: "Raleway", "Arial", sans-serif;
@@ -792,7 +806,7 @@ a {
 	line-height: 50px;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 19px;
+	margin-bottom: 17px;
 }
 
 .article-product-description {
@@ -803,6 +817,8 @@ a {
 	line-height: 30px;
 	color: #444444;
 	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	margin: 0;
 	margin-bottom: 30px;
 }
@@ -821,21 +837,22 @@ a {
 	letter-spacing: -0.02em;
 	color: inherit;
 	text-decoration: inherit;
+	padding: 0;
 }
 
 .services {
-	margin-bottom: 90px;
+	margin-bottom: 85px;
 	position: relative;
 }
 
 .services::before {
 	content: "";
 	position: absolute;
-	top: 163px;
+	top: 100px;
 	left: 0;
 	z-index: -1;
 	width: 100%;
-	height: calc(100% - 164px);
+	height: calc(100% - 110px);
 	background-color: #F0F0F0;
 }
 
@@ -859,8 +876,8 @@ a {
 	font-size: 50px;
 	line-height: 50px;
 	margin: 0;
+	margin-bottom: 35px;
 	padding: 0;
-	padding-bottom: 31px;
 }
 
 .services-slider-text {
@@ -896,14 +913,14 @@ a {
 	position: relative;
 	order: 2;
 	width: 497px;
-	margin-left: 116px;
-	padding-top: 139px;
+	margin-left: 120px;
+	padding-top: 71px;
 }
 
 .services-slider-item-delivery::before {
 	content: "";
 	position: absolute;
-	top: 148px;
+	top: 85px;
 	right: -200px;
 	z-index: 0;
 	width: 136px;
@@ -953,17 +970,17 @@ a {
 
 .services-slider-controls {
 	position: relative;
-	padding-top: 142px;
+	padding-top: 79px;
 	padding-right: 120px;
 }
 
 .services-slider-controls::before {
 	content: "";
 	position: absolute;
-	top: 63px;
+	top: 0;
 	right: -4px;
 	width: 7px;
-	height: calc(100% - 15px);
+	height: 319px;
 	background-color: #000;
 }
 
@@ -1009,7 +1026,7 @@ a {
 
 .about-us-delivery {
 	background-color: #F0F0F0;
-	margin-bottom: 139px;
+	margin-bottom: 148px;
 }
 
 .about-us-delivery-list {
@@ -1017,7 +1034,7 @@ a {
 	margin: 0;
 	display: flex;
 	list-style-type: none;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	cursor: pointer;
 }
@@ -1038,11 +1055,17 @@ a {
 
 .about-us-list-item-first {
 	background-color: #FFE17F;
-	padding: 35px 39px;
+	padding: 30px 39px;
+}
+
+.about-us-list-text-item {
+	width: 910px;
+	margin-right: 52px;
 }
 
 .about-us-info {
 	display: flex;
+	justify-content: space-between;
 }
 
 .about-us-description,
@@ -1107,6 +1130,7 @@ a {
 	line-height: 50px;
 	margin: 0;
 	padding: 0;
+	padding-bottom: 18px;
 	margin-bottom: 26px;
 }
 
@@ -1121,16 +1145,15 @@ a {
 }
 
 .main-description {
-	padding-bottom: 36px;
+	padding-bottom: 46px;
 	width: 497px;
 }
 
 .about-us-description-list {
 	width: 497px;
-	padding: 0;
 	margin: 0;
 	list-style-type: none;
-	padding: 0px 0px 62px 26px;
+	padding: 0px 0px 52px 33px;
 }
 
 .about-us-description-list-item {
@@ -1145,8 +1168,8 @@ a {
 .about-us-description-list-item::before {
 	content: "";
 	position: absolute;
-	top: 5px;
-	left: -26px;
+	top: 6px;
+	left: -31px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
@@ -1220,12 +1243,14 @@ a {
 	width: 1160px;
 	margin: 0 auto;
 	padding-top: 75px;
-	padding-bottom: 131px;
+	padding-bottom: 147px;
 }
 
 .mailing-text {
 	width: 1160px;
 	display: flex;
+	margin-bottom: 30px;
+	justify-content: space-between;
 }
 
 .mailing-form-container {
@@ -1237,25 +1262,37 @@ a {
 .mailing-form {
 	display: flex;
 	margin-right: 200px;
+	justify-content: flex-start;
+	margin-right: 171px;
 }
 
 .mailing-form-text {
 	padding: 0;
 	margin: 0;
 	width: 129px;
+	font-family: "Rubik", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	color: #444444;
+	position: relative;
+}
+
+.mailing-form-text::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/check-mark.svg");
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	top: 9px;
+	left: -39px;
 }
 
 .mailing-subscribe-input {
 	display: block;
 	width: 601px;
-}
-
-.mailing-submit-button {
-	display: block;
-	width: 260px;
-	border: none;
-	margin: 0;
-	padding: 0;
 }
 
 .mailing-subheader {
@@ -1278,6 +1315,7 @@ a {
 	text-align: left;
 	margin: 0;
 	padding: 0;
+	padding-top: 10px;
 }
 
 .mailing-submit-button {
@@ -1290,21 +1328,11 @@ a {
 	text-transform: uppercase;
 	color: #000000;
 	text-decoration: inherit;
-}
-
-.page-footer {
-	padding-top: 63px;
-	padding-bottom: 61px;
-	background-color: #444444;
-	color: white;
-}
-
-.footer-wrapper {
-	width: 1160px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	display: block;
+	width: 260px;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 .about-us-schedule {
@@ -2012,9 +2040,24 @@ a {
 	background-color: #EBEBEB;
 }
 
+.page-footer {
+	padding-top: 60px;
+	padding-bottom: 61px;
+	background-color: #444444;
+	color: white;
+}
+
+.footer-wrapper {
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
 .footer-logo {
 	width: 145px;
-	margin-bottom: 35px;
+	margin-bottom: 24px;
 }
 
 .footer-info,
@@ -2026,15 +2069,11 @@ a {
 }
 
 .footer-info {
-	margin-bottom: 63px;
+	margin-bottom: 50px;
 }
 
 .footer-info-address {
-	width: 238px;
-	margin-right: 114px;
-}
-
-.footer-address-text {
+	width: 240px;
 	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -2042,6 +2081,7 @@ a {
 	line-height: 19px;
 	color: #FFFFFF;
 	margin: 0;
+	margin-right: 120px;
 	padding: 0;
 }
 
@@ -2051,12 +2091,12 @@ a {
 	margin: 0;
 	padding: 0;
 	width: 458px;
-	justify-content: space-between;
-	margin-right: 58px;
+	justify-content: flex-start;
+	margin-right: 50px;
 }
 
 .footer-info-links-item {
-	width: 148px;
+	margin-right: 30px;
 }
 
 .footer-info-link {
@@ -2115,13 +2155,13 @@ a {
 	list-style-type: none;
 	width: 149px;
 	margin: 0;
+	margin-left: 505px;
 	padding: 0;
-	margin-right: 392px;
-	margin-left: 490px;
 }
 
 .footer-htmlacademy-link {
 	width: 115px;
+	margin-left: auto;
 }
 
 .product-specifications {
@@ -2206,6 +2246,14 @@ a {
 	background-image: url("../img/left_tall_arrow.svg");
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.product-slider-prev {
+	margin-left: 17px;
+}
+
+.product-slider-next {
+	margin-right: 19px;
 }
 
 .product-slider-next {
@@ -2585,7 +2633,9 @@ a {
 .quantity-control-minus:focus, .quantity-control-plus:focus {
 	opacity: 0.1;
 	box-shadow: inset 0 0 0 2px #AF4FFF;
+	/* border: 2px solid #AF4FFF; */
 }
+
 
 .quantity-control-minus:active, .quantity-control-plus:active {
 	opacity: 0.1;
