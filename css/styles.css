@@ -415,6 +415,20 @@ a {
 	content: "";
 	position: absolute;
   border: 2px solid #000;
+	border-radius: 20px 0px 0px 20px;
+	width: 356px;
+	height: 40px;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	outline: none;	
+	display: none;
+}
+
+.navigation-search-input:focus-visible::before {
+	content: "";
+	position: absolute;
+  border: 2px solid #AF4FFF;
 	border-radius: 20px;
 	width: 526px;
 	height: 40px;
@@ -422,24 +436,11 @@ a {
 	left: 45%;
 	transform: translate(-50%, -50%);
 	outline: none;	
-	display: none;
 }
 
-.navigation-search-input:focus-visible~.search-input-border::before {
+/* .navigation-search-input:active~.search-input-border::after  {
 	display: block;
-}
-
-.navigation-search-input:active~.search-input-border::after  {
-	display: block;
-}
-
-.navigation-search-input:active~.navigation-search-btn  {
-	display: block;
-}
-
-.navigation-search-input:active~.search-input-border::before  {
-	display: none;
-}
+} */
 
 .navigation-search-label {
 	position: absolute;
@@ -454,11 +455,6 @@ a {
 }
 
 .navigation-search-btn {
-	position: relative;
-	width: 160px;
-	padding: 0;
-	padding-top: 8px;
-	padding-bottom: 8px;
 	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -466,13 +462,48 @@ a {
 	line-height: 19px;
 	text-align: center;
 	color: #000000;
+	position: absolute;
+	top: -6px;
+	left: 330px;
+	z-index: -1;
+	width: 160px;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: 0 0;
 	background-color: transparent;
-	cursor: pointer;
-	border: none;
-	display: none;
-	border: 2px solid #000000;
-	box-sizing: border-box;
+	border: 2px solid #000;
 	border-radius: 0px 20px 20px 0px;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.navigation-search-btn:hover {
+	color: #fff;
+	background-color: #000;
+	transition: all .1s linear;
+}
+
+.navigation-search-btn:focus-visible {
+	content: "";
+	z-index: 0;
+	color: #000;
+	background-color: transparent;
+	opacity: 1;
+	width: 160px;
+	border: 2px solid #AF4FFF;
+	border-radius: 0px 20px 20px 0px;
+	outline: none;
+}
+
+.navigation-search-btn:active {
+	background-color: #000;
+	border-radius: 0px 20px 20px 0px;
+	opacity: 0.3;
+	color: #FFF;
+	outline: none;
+	border: none;
 }
 
 .navigation-user-link {
@@ -897,33 +928,42 @@ a {
 	text-decoration: inherit;
 	width: 220px;
 	margin-right: 200px;
-	background: 0 0;
-	border: 0;
+	border: none;
 	display: block;
 	position: relative;
 	z-index: 1;
 	outline: none;
 	cursor: pointer;
-}
-
-.btn:hover::before {
-	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	background-color: transparent;
 }
 
 .btn::before {
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: -2px;
-	z-index: -1;
+	left: 50%;
 	width: inherit;
+	transform: translate(-50%, -50%);
+	z-index: -1;
 	height: 8px;
-	margin-top: -5px;
 	background-color: #FFE17F;
+}
+
+.btn:hover {
+	background-color: #FFE17F;
+	transition: all .1s linear;
+	color: #000;
 }
 
 .btn:focus-visible::before {
 	background-color: #AF4FFF;
+}
+
+.btn:active {
+	opacity: 0.3;
 }
 
 .article-image {
@@ -1328,7 +1368,22 @@ a {
 }
 
 .services-slider-control:active {
+	background-color: #000;
+	transition: all 0s linear;
+	color: #FFE17F;
+}
 
+.services-slider-control:active::after {
+	content: "";
+	position: absolute;
+  border: none;
+	width: 120px;
+	height: 41px;
+	top: 0;
+	right: -120px;
+	z-index: 1;
+	outline: none;
+	background-color: #000;
 }
 
 .about-us-wrapper {
@@ -1354,17 +1409,24 @@ a {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: #000000;
+	outline: none;
+	position: relative;
+}
+
+.about-us-del-wrap:hover .about-us-list-item-first {
+	background-color: #FFC700;
 }
 
 .about-us-del-wrap:focus-visible::before {
 	content: "";
 	position: absolute;
   border: 5px solid #AF4FFF;
+	/* outline: inset 5px solid #AF4FFF; */
 	width: 1164px;
 	height: 100px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	z-index: 1;
 	outline: none;
 }
 
@@ -1419,14 +1481,10 @@ a {
 
 .about-us-description .btn {
 	width: 260px;
-	background: 0 0;
-	border: 0;
 }
 
 .about-us-contacts .btn {
 	width: 260px;
-	background: 0 0;
-	border: 0;
 }
 
 .about-us-contacts::before {
@@ -1442,7 +1500,7 @@ a {
 .about-us-delivery-image {
 	width: 47px;
 	height: 31px;
-	background-color: #FFE17F;
+	background-color: transparent;
 }
 
 .about-us-delivery-text {
