@@ -1807,7 +1807,8 @@ a {
 	padding-left: 38px;
 }
 
-.control-mark {
+.control-mark,
+.control-mark-radio {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1816,17 +1817,6 @@ a {
 	border: 2px solid rgba(0, 0, 0, .2);
 	border-radius: 3px;
 	background: #EBEBEB;
-	cursor: pointer;
-}
-
-.control-mark-radio {
-	position: absolute;
-	top: 4px;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 2px solid black;
-	border-radius: 3px;
 	cursor: pointer;
 }
 
@@ -1843,8 +1833,50 @@ a {
 	opacity: 0;
 }
 
-.control-input[type="checkbox"]:checked+.control-mark {
-	border: 2px solid rgba(0, 0, 0, 1);
+.check-control-img-radio {
+	top: 5px;
+	left: 5px;
+}
+
+.control-mark:active,
+.control-mark-radio:active {
+	opacity: 0.2;
+}
+
+.control-mark:active+.sidebar-control-label,
+.control-mark-radio:active+.radio-control-label {
+	opacity: 0.2;
+}
+
+.control-input:checked+.control-mark,
+.control-input:checked+.control-mark-radio {
+	border: 2px solid rgba(0, 0, 0);
+}
+
+.control-input:focus-visible~span {
+	color: #AF4FFF;
+}
+
+.control-input:focus-visible+.control-mark,
+.control-input:focus-visible+.control-mark-radio {
+	border: 2px solid #AF4FFF;
+}
+
+.control-input:focus-visible~svg {
+	fill: #AF4FFF;
+}
+
+.control-input:hover+.control-mark,
+.control-input:hover+.control-mark-radio {
+	border: 2px solid rgba(0, 0, 0, .5);
+}
+
+.control-input:hover~svg {
+	fill: rgba(0, 0, 0, .5);
+}
+
+.control-input:hover~span {
+	color: rgba(0, 0, 0, .5);
 }
 
 .control-input[type="checkbox"]:checked~svg {
@@ -1852,40 +1884,17 @@ a {
 	opacity: 1;
 }
 
-.control-input:hover+.control-mark {
-	background: #EBEBEB;
-	opacity: 0.2;
-	border: 2px solid #000000;
-	box-sizing: border-box;
-	border-radius: 3px;
-}
-
-.control-input:focus-visible~span {
-	color: #AF4FFF;
-}
-
-.control-input:focus-visible+.control-mark {
-	background: #EBEBEB;
-	border: 2px solid #AF4FFF;
-	box-sizing: border-box;
-	border-radius: 3px;
-}
-
-.control-input:focus-visible~svg {
-	fill: #AF4FFF;
-	opacity: 1;
+.control-input[type="radio"]:checked~svg {
 	z-index: 1;
-}
-
-.control-input:active~span {
-	color: 2px solid rgba(0, 0, 0, 0.2);
+	opacity: 1;
 }
 
 .control-input[type="radio"]+.control-mark-radio {
 	border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked+.control-mark-radio::before {
+
+/* .control-input[type="radio"]:checked + .control-mark-radio::before {
 	position: absolute;
 	top: 4px;
 	left: 4px;
@@ -1896,7 +1905,7 @@ a {
 	content: "";
 	cursor: pointer;
 	opacity: 1;
-}
+} */
 
 .sidebar-filter-button {
 	width: 200px;
@@ -2091,7 +2100,7 @@ a {
 }
 
 .sidebar-control-label,
-.control-label {
+.radio-control-label {
 	font-family: "Rubik", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
