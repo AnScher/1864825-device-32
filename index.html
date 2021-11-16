@@ -598,50 +598,63 @@
   <div class="modal-container modal-container-close">
     <div class="modal">
       <span class="visually-hidden">Закрыть</span>
-      <button class="modal-close-btn" type="button"></button>
+      <button class="modal-close-btn" type="button">
+        <svg class="modal-close-img" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M26 3L23 0L13 10L3 0L0 3L10 13L0 23L3 26L13 16L23 26L26 23L16 13L26 3Z" />
+        </svg>
+      </button>
       <section class="modal-content">
         <h2 class="modal-title">Доставка под заказ</h2>
         <form action="https://echo.htmlacademy.ru/" class="modal-form" method="post">
-          <label for="customer-name" class="modal-form-label modal-form-name">
-            <span class="customer-lable-title">Ваше имя:</span>
-            <input class="modal-input modal-input-name" type="text" placeholder="Имя Фамилия" name="customer-name"
-              id="customer-name" required>
-            <span class="modal-input-image modal-input-image-user"></span>
+          <div class="modal-form-label-wrap">
+            <label for="customer-name" class="modal-form-label modal-form-name">Ваше имя:
+              <input class="modal-input modal-input-name" type="text" placeholder="Имя Фамилия" name="customer-name"
+                id="customer-name" required>
+            </label>
             <span class="modal-name-subtext">Пожалуйста, представьтесь</span>
-          </label>
-          <label for="customer-email" class="modal-form-label modal-form-email">
-            <span class="customer-lable-title">Ваш e-mail:</span>
-            <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru"
-              name="customer-email" id="customer-email" required>
-            <span class="modal-input-image modal-input-image-email"></span>
+          </div>
+
+          <div class="modal-form-label-wrap">
+            <label for="customer-email" class="modal-form-label modal-form-email">Ваш e-mail:
+              <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru"
+                name="customer-email" id="customer-email" required>
+            </label>
             <span class="modal-email-subtext">Забавный у вас адрес</span>
-          </label>
-          <label for="customer-order" class="modal-form-label modal-form-order">
-            <span class="customer-lable-title">Что нужно привезти:</span>
-            <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме"
-              name="customer-order" id="customer-order">
-          </label>
-          <div class="order-quantity-content">
-            <label for="order-quantity" class="modal-form-label modal-form-quantity">
-              <span class="customer-lable-title">Количество:</span>
+          </div>
+
+          <div class="modal-form-label-wrap">
+            <label for="customer-order" class="modal-form-label modal-form-order">Что нужно привезти:
+              <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме"
+                name="customer-order" id="customer-order">
+            </label>
+          </div>
+
+          <div class="modal-form-label-wrap">
+            <label for="order-quantity" class="modal-form-label modal-form-quantity">Количество:
               <input class="modal-input modal-input-quantity" type="text" placeholder="1" name="order-quantity"
                 id="order-quantity">
             </label>
-            <div class="quantity-controls">
+            <div class="order-quantity-popover">
+              <h2 class="visually-hidden">Справка</h2>
+              <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                требованиям
+                к провозу багажа.
+              </p>
+            </div>
+            <div class="quantity-control-left">
               <button type="button" class="quantity-control-minus"></button>
               <span class="visually-hidden">Уменьшить</span>
+            </div>
+            <div class="quantity-control-right">
               <button type="button" class="quantity-control-plus"></button>
               <span class="visually-hidden">Увеличить</span>
             </div>
           </div>
-          <div class="order-quantity-popover">
-            <h2 class="visually-hidden">Справка</h2>
-            <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-              к провозу багажа.
-            </p>
+          <div class="modal-submit-wrap">
+            <button href="#" class="btn modal-submit-btn" type="submit">Отправить</button>
           </div>
         </form>
-        <a href="#" class="btn">Отправить</a>
       </section>
     </div>
   </div>
