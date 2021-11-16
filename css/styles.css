@@ -703,7 +703,7 @@ a {
 .main-navigation-list-link-delivery:active,
 .main-navigation-list-link-warranty:active,
 .main-navigation-list-link-contacts:active {
-	opacity: 0.3;
+	color:rgba(0, 0, 0, .3);
 }
 
 .main-nav-catalog-mark::before {
@@ -803,7 +803,7 @@ a {
 }
 
 .inner-menu-list-link:hover {
-	opacity: 0.6;
+	color:rgba(0, 0, 0, .6);
 }
 
 .inner-menu-list-link:focus-visible::before {
@@ -816,10 +816,6 @@ a {
 	left: 50%;
 	transform: translate(-55%, -50%);
 	border-radius: 25px;
-}
-
-.inner-menu-list-link:active {
-	opacity: 0.3;
 }
 
 .inner-menu-list-item:first-child {
@@ -1845,13 +1841,13 @@ a {
 	opacity: 0.2;
 }
 
-.control-mark:active+.sidebar-control-label,
+.control-mark:active + .sidebar-control-label,
 .control-mark-radio:active+.radio-control-label {
 	opacity: 0.2;
 }
 
-.control-input:checked+.control-mark,
-.control-input:checked+.control-mark-radio {
+.control-input:checked + .control-mark,
+.control-input:checked + .control-mark-radio {
 	border: 2px solid rgba(0, 0, 0);
 }
 
@@ -1859,8 +1855,8 @@ a {
 	color: #AF4FFF;
 }
 
-.control-input:focus-visible+.control-mark,
-.control-input:focus-visible+.control-mark-radio {
+.control-input:focus-visible + .control-mark,
+.control-input:focus-visible + .control-mark-radio {
 	border: 2px solid #AF4FFF;
 }
 
@@ -1868,46 +1864,32 @@ a {
 	fill: #AF4FFF;
 }
 
-.control-input:hover+.control-mark,
-.control-input:hover+.control-mark-radio {
+.control-input:hover + .control-mark,
+.control-input:hover + .control-mark-radio {
 	border: 2px solid rgba(0, 0, 0, .5);
 }
 
-.control-input:hover~svg {
+.control-input:hover ~ svg {
 	fill: rgba(0, 0, 0, .5);
 }
 
-.control-input:hover~span {
+.control-input:hover ~ span {
 	color: rgba(0, 0, 0, .5);
 }
 
-.control-input[type="checkbox"]:checked~svg {
+.control-input[type="checkbox"]:checked ~ svg {
 	z-index: 1;
 	opacity: 1;
 }
 
-.control-input[type="radio"]:checked~svg {
+.control-input[type="radio"]:checked ~ svg {
 	z-index: 1;
 	opacity: 1;
 }
 
-.control-input[type="radio"]+.control-mark-radio {
+.control-input[type="radio"] + .control-mark-radio {
 	border-radius: 50%;
 }
-
-
-/* .control-input[type="radio"]:checked + .control-mark-radio::before {
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 8px;
-	height: 8px;
-	background-color: black;
-	border-radius: 50%;
-	content: "";
-	cursor: pointer;
-	opacity: 1;
-} */
 
 .sidebar-filter-button {
 	width: 200px;

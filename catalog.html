@@ -160,12 +160,12 @@
                   </div>
                 </div>
                 <div class="range-inputs-wrap">
-                  <input type="number" class="sidebar-range-input sidebar-range-input-first" name="min-price"
-                    value="0" />
+                  <input type="number" class="sidebar-range-input sidebar-range-input-first" name="min-price" value="0"
+                    id="min-price" />
                   <label class="sidebar-range-label left-range-label" for="min-price">от
                   </label>
                   <input type="number" class="sidebar-range-input sidebar-range-input-second" name="max-price"
-                    value="5000" />
+                    value="5000" id="max-price" />
                   <label class="sidebar-range-label right-range-label" for="max-price">до
                   </label>
                 </div>
@@ -242,8 +242,8 @@
               <ul class="sidebar-radio-list">
                 <li class="sidebar-radio-item radio-first-item">
                   <label class="radio-control">
-                    <input type="radio" class="visually-hidden control-input" id="bluetooth-radio-yes" name="radio"
-                      checked />
+                    <input type="radio" class="visually-hidden control-input" id="bluetooth-radio-yes"
+                      name="bluetooth-radio-yes" checked />
                     <span class="control-mark-radio"></span>
                     <span class="radio-control-label">Есть</span>
                     <svg class="check-control-img check-control-img-radio" aria-hidden="true" focusable="false"
@@ -254,7 +254,8 @@
                 </li>
                 <li class="sidebar-radio-item">
                   <label class="radio-control">
-                    <input type="radio" class="visually-hidden control-input" name="radio" id="bluetooth-radio-no" />
+                    <input type="radio" class="visually-hidden control-input" name="bluetooth-radio-no"
+                      id="bluetooth-radio-no" />
                     <span class="control-mark-radio"></span>
                     <span class="radio-control-label">Нет</span>
                     <svg class="check-control-img check-control-img-radio" aria-hidden="true" focusable="false"
@@ -296,8 +297,9 @@
               <a href="#" class="updown-list-link">
                 <svg class="sorting-up-arrow" aria-hidden="true" focusable="false" width="11" height="10"
                   viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L11 10H0">
+                  <path d="M5.5 0L11 10H0"></path>
                 </svg>
+
                 <span class="visually-hidden">По возрастанию</span>
               </a>
             </li>
@@ -476,6 +478,7 @@
         </p>
       </section>
       <section class="footer-links">
+        <h2 class="visually-hidden">Связаться с нами</h2>
         <ul class="footer-links-list">
           <li class="footer-social-images-item">
             <a class="footer-social-image" href="https://facebook.com/htmlacademy">
