@@ -96,11 +96,7 @@ a {
 }
 
 .catalog-nav {
-	padding-top: 25px;
-	padding-bottom: 53px;
-}
-
-.catalog-navigation {
+	padding-top: 24px;
 	padding-bottom: 47px;
 }
 
@@ -2376,7 +2372,7 @@ a {
 
 .catalog-header-title {
 	margin: 0;
-	padding-bottom: 17px;
+	padding-bottom: 22px;
 	font-family: "Raleway", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 800;
@@ -2752,6 +2748,10 @@ a {
 	background-color: #444444;
 	color: white;
 }
+
+.catalog-page-footer {
+	padding-top: 65px;
+}	
 
 .footer-wrapper {
 	width: 1160px;
