@@ -221,11 +221,6 @@ a {
 	border: none;
 }
 
-.popover-item-image-wrap {
-	display: flex;
-	color: white
-}
-
 .popover-item-image-wrap:hover {
 	opacity: 0.6;
 }
@@ -305,6 +300,7 @@ a {
 	margin-left: auto;
 	width: 180px;
 	font: inherit;
+	text-align: left;
 }
 
 .summary-info {
@@ -322,6 +318,7 @@ a {
 	width: 120px;
 	margin-left: 20px;
 	margin-right: 10px;
+	text-align: left;
 }
 
 .summary-info-totalsum {
