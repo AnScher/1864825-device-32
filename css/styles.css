@@ -227,7 +227,7 @@ a {
 	border: 5px solid #AF4FFF;
 	width: 41px;
 	height: 43px;
-	top: -5;
+	top: -5px;
 	left: 0;
 	outline: none;
 }
@@ -481,7 +481,6 @@ a {
 	position: absolute;
 	width: 13px;
 	height: 12px;
-	background-repeat: no-repeat;
 	bottom: 4px;
 	left: -26px;
 	background-image: url(../img/user-enter.svg);
@@ -1332,7 +1331,6 @@ a {
 
 .services-slider-control:focus-visible::before {
 	background-color: #AF4FFF;
-	;
 }
 
 .services-slider-control:active {
@@ -1623,7 +1621,6 @@ a {
 
 .mailing-form {
 	display: flex;
-	margin-right: 200px;
 	justify-content: flex-start;
 	margin-right: 171px;
 }
@@ -1710,7 +1707,6 @@ a {
 .mailing-submit-button:focus-visible::before {
 	content: "";
 	position: absolute;
-	border: none;
 	border: 4px solid #AF4FFF;
 	width: 261px;
 	height: 55px;
@@ -1849,53 +1845,53 @@ a {
 	opacity: 0.2;
 }
 
-.control-mark:active+.sidebar-control-label,
-.control-mark-radio:active+.radio-control-label {
+.control-mark:active + .sidebar-control-label,
+.control-mark-radio:active + .radio-control-label {
 	opacity: 0.2;
 }
 
-.control-input:checked+.control-mark,
-.control-input:checked+.control-mark-radio {
+.control-input:checked + .control-mark,
+.control-input:checked + .control-mark-radio {
 	border: 2px solid rgba(0, 0, 0);
 }
 
-.control-input:focus-visible~span {
+.control-input:focus-visible ~ span {
 	color: #AF4FFF;
 }
 
-.control-input:focus-visible+.control-mark,
-.control-input:focus-visible+.control-mark-radio {
+.control-input:focus-visible + .control-mark,
+.control-input:focus-visible + .control-mark-radio {
 	border: 2px solid #AF4FFF;
 }
 
-.control-input:focus-visible~svg {
+.control-input:focus-visible ~ svg {
 	fill: #AF4FFF;
 }
 
-.control-input:hover+.control-mark,
-.control-input:hover+.control-mark-radio {
+.control-input:hover + .control-mark,
+.control-input:hover + .control-mark-radio {
 	border: 2px solid rgba(0, 0, 0, .5);
 }
 
-.control-input:hover~svg {
+.control-input:hover ~ svg {
 	fill: rgba(0, 0, 0, .5);
 }
 
-.control-input:hover~span {
+.control-input:hover ~ span {
 	color: rgba(0, 0, 0, .5);
 }
 
-.control-input[type="checkbox"]:checked~svg {
+.control-input[type="checkbox"]:checked ~ svg {
 	z-index: 1;
 	opacity: 1;
 }
 
-.control-input[type="radio"]:checked~svg {
+.control-input[type="radio"]:checked ~ svg {
 	z-index: 1;
 	opacity: 1;
 }
 
-.control-input[type="radio"]+.control-mark-radio {
+.control-input[type="radio"] + .control-mark-radio {
 	border-radius: 50%;
 }
 
@@ -2272,17 +2268,6 @@ a {
 
 .radio-first-item {
 	margin-bottom: 10px;
-}
-
-.user-navigation-catalog-list {
-	display: flex;
-	list-style-type: none;
-	margin-top: 0;
-	margin-bottom: 29px;
-	margin-top: 48px;
-	margin-right: 25px;
-	padding: 0;
-	width: 535px;
 }
 
 .sorting-select {
@@ -2825,7 +2810,6 @@ a {
 .footer-info-link:hover {
 	color: #FFC700;
 	border-bottom: 2px solid #FFC700;
-	;
 }
 
 .footer-info-link:focus-visible::before {
@@ -3398,6 +3382,7 @@ a {
 }
 
 .modal-input:hover {
+	font-family: "Rubik", "Arial, sans-serif";
 	background-color: #EBEBEB;
 }
 
@@ -3412,6 +3397,7 @@ a {
 	box-shadow: inset 0 0 0 3px #000000;
 	opacity: 1;
 	color: black;
+	font-family: "Rubik", "Arial, sans-serif";
 }
 
 .modal-input-name,
