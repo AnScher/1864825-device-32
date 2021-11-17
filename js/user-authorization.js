@@ -1,10 +1,10 @@
-let enterLink = document.querySelector('.navigation-user-item-login');
+let deliveryBtn = document.querySelector('.services-slider-control-active');
 let modalWindow = document.querySelector('.modal-container');
 
 let closeBtn = document.querySelector('.modal-close-btn');
 
 
-enterLink.onclick = function() {
+deliveryBtn.onclick = function() {
   modalWindow.classList.remove('modal-container-close')
 }
 
