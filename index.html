@@ -22,6 +22,8 @@
         <ul class="navigation-user-list">
           <li class="navigation-user-item  navigation-user-item-search">
             <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru">
+              <input class="navigation-search-input" id="search" type="search" name="search"
+                placeholder="Поиск по сайту">
               <label class="navigation-search-label" for="search">
                 <svg class="nav-search-img" aria-hidden="true" focusable="false" width="16" height="16"
                   xmlns="http://www.w3.org/2000/svg">
@@ -30,10 +32,7 @@
                 </svg>
                 <span class="visually-hidden">Поиск:</span>
               </label>
-              <input class="navigation-search-input" id="search" type="search" name="search"
-                placeholder="Поиск по сайту">
               <button class="navigation-search-btn" type="submit">Найти</button>
-              <span class="navigation-search-mark"></span>
             </form>
           </li>
           <li class="navigation-user-item  navigation-user-item-login">
@@ -46,38 +45,39 @@
             <a class="navigation-user-link  navigation-user-link-cart" href="#">Корзина</a>
             <span class="user-link-cart-mark"></span>
             <span class="user-link-cart-number">2</span>
+            <div class="popover popover-cart">
+              <svg class="popover-triangle-img" aria-hidden="true" focusable="false" width="14" height="6"
+                viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H0L7 0L14 6Z" />
+              </svg>
+              <h2 class="visually-hidden">Корзина</h2>
+              <ul class="popover-cart-items">
+                <li class="popover-item popover-item-first">
+                  <a href="#" class="popover-item-image-wrap">
+                    <img src="img/product-1-small.jpg" alt="Товар в корзине" width="41" height="43"
+                      class="popover-item-image">
+                    <span class="popover-item-name popover-item-name-first">Любительская <br>селфи-палка</span>
+                  </a>
+                  <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
+                </li>
+                <li class="popover-item popover-item-second">
+                  <a href="#" class="popover-item-image-wrap">
+                    <img src="img/product-2-small.jpg" alt="Товар в корзине" width="41" height="43"
+                      class="popover-item-image">
+                    <p class="popover-item-name popover-item-name-second">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
+                </li>
+              </ul>
+              <div class="popover-cart-summary">
+                <p class="summary-info summary-info-goods">Товаров: 2</p>
+                <p class="summary-info summary-info-totalsum">Сумма: 2000 ₽</p>
+              </div>
+              <div class="popover-button-wrap">
+                <button class="popover-button">Открыть корзину</button>
+              </div>
+            </div>
           </li>
-          <div class="popover popover-cart">
-              <svg class="popover-triangle-img" aria-hidden="true" focusable="false" width="14" height="6" viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H0L7 0L14 6Z"/>
-              </svg>                
-            <h2 class="visually-hidden">Корзина</h2>
-            <ul class="popover-cart-items">
-              <li class="popover-item popover-item-first">
-                <a href="#" class="popover-item-image-wrap">
-                  <img src="img/product-1-small.jpg" alt="Товар в корзине" width="41" height="43"
-                    class="popover-item-image">
-                  <span class="popover-item-name popover-item-name-first">Любительская <br>селфи-палка</span>
-                </a>
-                <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
-              </li>
-              <li class="popover-item popover-item-second">
-                <a href="#" class="popover-item-image-wrap">
-                  <img src="img/product-2-small.jpg" alt="Товар в корзине" width="41" height="43"
-                    class="popover-item-image">
-                  <p class="popover-item-name popover-item-name-second">Профессиональная селфи-палка</p>
-                </a>
-                <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
-              </li>
-            </ul>
-            <div class="popover-cart-summary">
-              <p class="summary-info summary-info-goods">Товаров: 2</p>
-              <p class="summary-info summary-info-totalsum">Сумма: 2000 ₽</p>
-            </div>
-            <div class="popover-button-wrap">
-              <button class="popover-button">Открыть корзину</button>
-            </div>
-          </div>
         </ul>
 
         <ul class="main-navigation-list">
@@ -114,7 +114,6 @@
       </nav>
     </header>
   </div>
-
   <main class="main-container">
     <h1 class="visually-hidden">Онлайн-магазин гаджетов Device</h1>
     <section class="products">
@@ -131,7 +130,6 @@
             </button>
           </div>
         </div>
-
         <div class="article-description">
           <h1 class="article-header">Порхает как бабочка, жалит как пчела!</h1>
           <p class="article-product-description">
@@ -177,7 +175,6 @@
             </ul>
           </div>
         </div>
-
       </article>
       <article class="product product-2">
         <div class="article-image">
@@ -191,7 +188,6 @@
             </button>
           </div>
         </div>
-
         <div class="article-description">
           <h1 class="article-header">Худеем<br>правильно!</h1>
           <p class="article-product-description">
@@ -230,7 +226,6 @@
             </ul>
           </div>
         </div>
-
       </article>
       <article class="product product-3">
         <div class="article-image">
@@ -244,7 +239,6 @@
             </button>
           </div>
         </div>
-
         <div class="article-description">
           <h1 class="article-header">Делай селфи,<br>как Бен Стиллер!</h1>
           <p class="article-product-description">
@@ -295,9 +289,7 @@
               </li>
             </ul>
           </div>
-
         </div>
-
       </article>
     </section>
     <section class="categories">
@@ -357,26 +349,27 @@
       <h2 class="visually-hidden">Сервисы</h2>
       <div class="services-wrapper">
         <div class="services-content">
-
           <div class="services-slider-item services-slider-item-active services-slider-item-delivery">
             <h3 class="services-subtitle">Доставка</h3>
             <p class="services-slider-text">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь<br>
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
           </div>
           <div class="services-slider-item services-slider-item-warranty">
             <h3 class="services-subtitle">Гарантия</h3>
             <p class="services-slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
               переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.</p>
+              Товар, не дом, конечно же.
+            </p>
           </div>
           <div class="services-slider-item services-slider-item-credit">
             <h3 class="services-subtitle">Кредит</h3>
             <p class="services-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
               наиболее выгодные условия кредита. Выгодные
-              для банка, разумеется.</p>
+              для банка, разумеется.
+            </p>
           </div>
-
           <div class="services-slider-controls">
             <label class="services-slider-control-active">
               <button type="button" class="services-slider-control services-slider-control-active">Доставка</button>
@@ -388,7 +381,6 @@
               <button type="button" class="services-slider-control">Кредит</button>
             </label>
           </div>
-
         </div>
       </div>
     </section>
@@ -467,8 +459,10 @@
           </p>
         </div>
         <div class="mailing-form-container">
-          <form action="#" method="POST" class="mailing-form">
-            <input type="email" class="mailing-subscribe-input" placeholder="Ваш e-mail" required>
+          <form action="https://echo.htmlacademy.ru" method="POST" class="mailing-form">
+            <label for="subscribe-input" class="visually-hidden"></label>
+            <input type="email" class="mailing-subscribe-input" placeholder="Ваш e-mail" name="subscribe-input"
+              id="subscribe-input" required>
             <button class="button mailing-submit-button" type="submit">Подписаться</button>
           </form>
           <span class="mailing-form-text">Это бесплатно</span>
@@ -616,7 +610,6 @@
               <span class="modal-subtext">Пожалуйста, представьтесь</span>
             </label>
           </div>
-
           <div class="modal-form-label-wrap">
             <label for="customer-email" class="modal-form-label modal-form-email">Ваш e-mail:
               <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru"
@@ -624,38 +617,36 @@
               <span class="modal-subtext">Забавный у вас адрес</span>
             </label>
           </div>
-
           <div class="modal-form-label-wrap">
             <label for="customer-order" class="modal-form-label modal-form-order">Что нужно привезти:
               <input class="modal-input modal-input-order" type="text" placeholder="В свободной форме"
                 name="customer-order" id="customer-order">
             </label>
           </div>
-
           <div class="modal-form-label-wrap">
+            <button type="button" class="quantity-control-minus">
+              <svg class="quantity-minus-svg" aria-hidden="true" focusable="false" width="16" height="2"
+                viewBox="0 0 16 2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0H0V2H16V0Z" />
+              </svg>
+              <span class="visually-hidden">Уменьшить</span>
+            </button>
             <label for="order-quantity" class="modal-form-label modal-form-quantity">Количество:
               <input class="modal-input modal-input-quantity" type="text" placeholder="1" name="order-quantity"
                 id="order-quantity">
-
-                <button type="button" class="quantity-control-minus">
-                  <svg class="quantity-minus-svg" aria-hidden="true" focusable="false" width="16" height="2" viewBox="0 0 16 2" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 0H0V2H16V0Z"/>
-                  </svg>
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-  
-                <button type="button" class="quantity-control-plus">
-                  <svg class="quantity-plus-svg" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
-                  </svg>
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-
             </label>
+            <button type="button" class="quantity-control-plus">
+              <svg class="quantity-plus-svg" aria-hidden="true" focusable="false" width="16" height="16"
+                viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
+              </svg>
+              <span class="visually-hidden">Увеличить</span>
+            </button>
             <span class="order-popover-mark"></span>
             <div class="order-quantity-popover">
-              <svg class="popover-triangle-img" aria-hidden="true" focusable="false" width="14" height="6" viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H0L7 0L14 6Z"/>
+              <svg class="popover-triangle-img" aria-hidden="true" focusable="false" width="14" height="6"
+                viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H0L7 0L14 6Z" />
               </svg>
               <h2 class="visually-hidden">Справка</h2>
               <p class="quantity-popover-text">Постараемся найти, сколько нужно. Привезём сколько получится по
@@ -663,11 +654,9 @@
                 к провозу багажа.
               </p>
             </div>
-
-
           </div>
           <div class="modal-submit-wrap">
-            <button href="#" class="btn modal-submit-btn" type="submit">Отправить</button>
+            <button class="btn modal-submit-btn" type="submit">Отправить</button>
           </div>
         </form>
       </section>
