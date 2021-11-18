@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/img/favicon.png" type="image/png" sizes="32x32">
 </head>
 
 <body>
@@ -61,7 +62,9 @@
                       class="popover-item-image">
                     <span class="popover-item-name popover-item-name-first">Любительская <br>селфи-палка</span>
                   </a>
-                  <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
+                  <button class="popover-cart-delete-item" type="button" tabindex="-1">
+                    <span class="visually-hidden">Удалить товар.</span>
+                  </button>
                 </li>
                 <li class="popover-item popover-item-second">
                   <a href="#" class="popover-item-image-wrap">
@@ -69,7 +72,9 @@
                       class="popover-item-image">
                     <p class="popover-item-name popover-item-name-second">Профессиональная селфи-палка</p>
                   </a>
-                  <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
+                  <button class="popover-cart-delete-item" type="button" tabindex="-1">
+                    <span class="visually-hidden">Удалить товар.</span>
+                  </button>
                 </li>
               </ul>
               <div class="popover-cart-summary">
@@ -77,10 +82,10 @@
                 <p class="summary-info summary-info-totalsum">Сумма: 2000 ₽</p>
               </div>
               <div class="popover-button-wrap">
-                <button class="popover-button">
+                <a href="#" class="popover-button">
                   Открыть корзину
                   <span class="visually-hidden">Открыть корзину.</span>
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -146,17 +151,17 @@
             <a href="#" class="btn">Подробнее</a>
             <ol class="product-slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">1 Фото.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">2 Фото.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">3 Фото.</span>
                 </button>
               </li>
@@ -185,14 +190,6 @@
       <article class="product product-2">
         <div class="article-image">
           <img src="img/slider-2.png" alt="Фитнес браслет" class="product-slider-image" width="560" height="560" />
-          <div class="image-controls">
-            <button class="product-slider-button product-slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото.</span>
-            </button>
-            <button class="product-slider-button product-slider-next" type="button">
-              <span class="visually-hidden">Следующее фото.</span>
-            </button>
-          </div>
         </div>
         <div class="article-description">
           <h1 class="article-header">Худеем<br>правильно!</h1>
@@ -201,23 +198,6 @@
           </p>
           <div class="pagination">
             <a href="#" class="btn">Подробнее</a>
-            <ol class="product-slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
-                  <span class="visually-hidden">1 Фото.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current">
-                  <span class="visually-hidden">2 Фото.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
-                  <span class="visually-hidden">3 Фото.</span>
-                </button>
-              </li>
-            </ol>
           </div>
           <div class="product-specifications">
             <ul class="product-spec-list">
@@ -236,14 +216,6 @@
       <article class="product product-3">
         <div class="article-image">
           <img src="img/slider-3.png" alt="Селфи палки" class="product-slider-image" width="560" height="560" />
-          <div class="image-controls image-controls-third">
-            <button class="product-slider-button product-slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото.</span>
-            </button>
-            <button class="product-slider-button product-slider-next" type="button">
-              <span class="visually-hidden">Следующее фото.</span>
-            </button>
-          </div>
         </div>
         <div class="article-description">
           <h1 class="article-header">Делай селфи,<br>как Бен Стиллер!</h1>
@@ -253,23 +225,6 @@
           </p>
           <div class="pagination">
             <a href="#" class="btn">Подробнее</a>
-            <ol class="product-slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
-                  <span class="visually-hidden">1 Фото.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
-                  <span class="visually-hidden">2 Фото.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current">
-                  <span class="visually-hidden">3 Фото.</span>
-                </button>
-              </li>
-            </ol>
           </div>
           <div class="product-specifications">
             <ul class="product-spec-list">
@@ -303,15 +258,13 @@
       <ul class="categories-list">
         <li class="categories-list-item">
           <a href="#" class="categories-list-image glasses">
-            <img src="img/virtual-reality-glasses.svg" alt="Очки виртуальной реальности" width="97" height="55" />
           </a>
           <a href="#" class="categories-list-item-link">
             Виртуальная реальность
           </a>
         </li>
         <li class="categories-list-item">
-          <a href="#" class="categories-list-image monopod">
-            <img src="img/monopod.svg" alt="Монопод для селфи" width="86" height="117" />
+          <a href="catalog.html" class="categories-list-image monopod">
           </a>
           <a href="catalog.html" class="categories-list-item-link">
             Моноподы <br>для селфи
@@ -319,7 +272,6 @@
         </li>
         <li class="categories-list-item">
           <a href="#" class="categories-list-image action-camera">
-            <img src="img/action-camera.svg" alt="Экшн-камера" width="71" height="87" />
           </a>
           <a href="#" class="categories-list-item-link">
             Экшн-камеры
@@ -327,7 +279,6 @@
         </li>
         <li class="categories-list-item">
           <a href="#" class="categories-list-image fitness">
-            <img src="img/fitness-bracelet.svg" alt="Фитнес браслет" width="107" height="65" />
           </a>
           <a href="#" class="categories-list-item-link">
             Фитнес-браслеты
@@ -335,7 +286,6 @@
         </li>
         <li class="categories-list-item">
           <a href="#" class="categories-list-image smart">
-            <img src="img/smart-watch.svg" alt="Умные часы" width="56" height="98" />
           </a>
           <a href="#" class="categories-list-item-link">
             Умные часы
@@ -343,7 +293,6 @@
         </li>
         <li class="categories-list-item">
           <a href="#" class="categories-list-image kvadro">
-            <img src="img/kvadrokopters.svg" alt="Квадрокоптер" width="132" height="69" />
           </a>
           <a href="#" class="categories-list-item-link">
             Квадрокоптеры
@@ -407,14 +356,11 @@
             <h3 class="visually-hidden">Доставка.</h3>
             <ul class="about-us-delivery-list">
               <li class="about-us-list-item-first">
-                <img src="img/delivery_truck.svg" alt="Грузовик доставки" class="about-us-delivery-image" width="47"
-                  height="31" />
               </li>
               <li class="about-us-list-text-item">
                 <span class="about-us-delivery-text">Доставим редкий товар под заказ</span>
               </li>
               <li class="about-us-list-item">
-                <img src="img/info.svg" alt="Восклицательный знак справки" class="about-us-delivery-link-image" />
               </li>
             </ul>
           </section>
@@ -545,7 +491,6 @@
         <ul class="footer-links-list">
           <li class="footer-social-images-item">
             <a class="footer-social-image" href="https://facebook.com/htmlacademy">
-              <span class="social-img-wrap"></span>
               <svg class="facebook-img" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z" />
@@ -555,7 +500,6 @@
           </li>
           <li class="footer-social-images-item">
             <a class="footer-social-image" href="https://instagram.com/htmlacademy">
-              <span class="social-img-wrap"></span>
               <svg class="instagram-img" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -566,7 +510,6 @@
           </li>
           <li class="footer-social-images-item">
             <a class="footer-social-image" href="https://twitter.com/htmlacademy_ru">
-              <span class="social-img-wrap"></span>
               <svg class="twitter-img" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -604,6 +547,7 @@
               <path
                 d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" />
             </svg>
+            <span class="visually-hidden">Ссылка на сайт htmlacademy.ru.</span>
           </a>
         </div>
       </section>
@@ -630,7 +574,7 @@
           </div>
           <div class="modal-form-label-wrap">
             <label for="customer-email" class="modal-form-label modal-form-email">Ваш e-mail:
-              <input class="modal-input modal-input-email" type="text" placeholder="krasotka92@mail.ru"
+              <input class="modal-input modal-input-email" type="email" placeholder="krasotka92@mail.ru"
                 name="customer-email" id="customer-email" required>
               <span class="modal-subtext">Забавный у вас адрес</span>
             </label>

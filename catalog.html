@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/img/favicon.png" type="image/png" sizes="32x32">
 </head>
 
 <body>
@@ -78,46 +79,14 @@
                 <p class="summary-info summary-info-totalsum">Сумма: 2000 ₽</p>
               </div>
               <div class="popover-button-wrap">
-                <button class="popover-button">
+                <a href="#" class="popover-button">
                   Открыть корзину
                   <span class="visually-hidden">Открыть корзину.</span>
-                </button>
+                </a>
               </div>
             </div>
           </li>
         </ul>
-
-        <div class="popover popover-cart">
-          <h2 class="visually-hidden">Корзина.</h2>
-          <ul class="popover-cart-items">
-            <li class="popover-item popover-item-first">
-              <a href="#" class="popover-item-image-wrap">
-                <img src="img/product-1-small.jpg" alt="Товар в корзине" width="41" height="43"
-                  class="popover-item-image">
-                <span class="popover-item-name popover-item-name-first">Любительская <br>селфи-палка</span>
-              </a>
-              <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
-            </li>
-            <li class="popover-item popover-item-second">
-              <a href="#" class="popover-item-image-wrap">
-                <img src="img/product-2-small.jpg" alt="Товар в корзине" width="41" height="43"
-                  class="popover-item-image">
-                <p class="popover-item-name popover-item-name-second">Профессиональная селфи-палка</p>
-              </a>
-              <button class="popover-cart-delete-item" type="button" tabindex="-1"></button>
-            </li>
-          </ul>
-          <div class="popover-cart-summary">
-            <p class="summary-info summary-info-goods">Товаров: 2</p>
-            <p class="summary-info summary-info-totalsum">Сумма: 2000 ₽</p>
-          </div>
-          <div class="popover-button-wrap">
-            <button class="popover-button">
-              Открыть корзину
-              <span class="visually-hidden">Открыть корзину.</span>
-            </button>
-          </div>
-        </div>
 
         <ul class="main-navigation-list">
           <li class="main-navigation-list-item main-navigation-list-item-catalog">
@@ -332,13 +301,13 @@
                   <path
                     d="M6.1 5.8001L10.8 1.3001C11.1 1.0001 11.1 0.500098 10.8 0.200098C10.5 -0.0999023 10 -0.0999023 9.7 0.200098L5.5 4.2001L1.3 0.200098C1 -0.0999023 0.5 -0.0999023 0.2 0.200098C0.1 0.400098 0 0.600098 0 0.800098C0 1.0001 0.1 1.2001 0.2 1.3001L4.9 5.8001C5.3 6.1001 5.7 6.1001 6.1 5.8001Z" />
                 </svg>
-                <span class="visually-hidden">Выбор спрособа сортировки.</span>
+                <span class="visually-hidden">Выбор способа сортировки.</span>
               </button>
             </div>
           </form>
           <ul class="sorting-updown-list">
             <li class="updown-list-item">
-              <a href="#" class="updown-list-link">
+              <a href="#" class="updown-list-link" type="button">
                 <svg class="sorting-up-arrow" aria-hidden="true" focusable="false" width="11" height="10"
                   viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L11 10H0"></path>
@@ -348,7 +317,7 @@
               </a>
             </li>
             <li class="updown-list-item">
-              <a href="#" class="updown-list-link">
+              <a href="#" class="updown-list-link" type="button">
                 <svg class="sorting-down-arrow" aria-hidden="true" focusable="false" width="11" height="10"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10 0 0h11" />
@@ -357,10 +326,6 @@
               </a>
             </li>
           </ul>
-          <button class="visually-hidden" type="submit">
-            Отсортировать товары.
-            <span class="visually-hidden">Отсортировать товары.</span>
-          </button>
         </section>
         <div class="product-cards">
           <h2 class="visually-hidden">Товары.</h2>
