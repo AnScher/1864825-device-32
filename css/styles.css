@@ -1010,7 +1010,7 @@ a {
 
 .categories-list-image:active {
 	opacity: 0.3;
-	background-color: #f0c52e;
+	background-color: rgb(255, 199, 0);
 	border: none;
 	outline: none;
 }
@@ -1695,6 +1695,11 @@ a {
 	opacity: 0.7;
 }
 
+.mailing-subscribe-input:not(:placeholder-shown) {
+	background: #F0F0F0;
+	border-bottom: 3px solid #000;
+}
+
 .mailing-subscribe-input:hover {
 	border-bottom: 3px solid rgba(0, 0, 0, .2);
 }
@@ -1703,14 +1708,15 @@ a {
 	background: #DCDCDC;
 }
 
-.mailing-subscribe-input:not(:placeholder-shown) {
-	background: #F0F0F0;
-	border-bottom: 3px solid #000;
-}
-
-.mailing-subscribe-input:focus:invalid {
+.mailing-subscribe-input:focus-visible:invalid {
 	background: #F0F0F0;
 	border-bottom: 3px solid #FF3D3D;
+}
+
+.mailing-subscribe-input:disabled + .mailing-sudmit-button {
+	border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .mailing-submit-button {
@@ -2242,6 +2248,10 @@ a {
 	color: rgba(0, 0, 0, .3);
 }
 
+.sidebar-range-label {
+	color: rgba(0, 0, 0, .3);
+}
+
 .sidebar-range-input-first {
 	order: 2;
 	margin-right: 23px;
@@ -2258,22 +2268,23 @@ a {
 }
 
 .sidebar-range-input:focus-visible {
-	color: rgb(175, 79, 255, .3);
+	color: #af4fff;
 	border: none;
 	outline: none;
 }
 
 .sidebar-range-input:focus-visible+.sidebar-range-label {
-	color: rgba(175, 79, 255, .3);
+	color: #af4fff4d;
 }
 
 .sidebar-range-input:active {
 	color: rgba(0, 0, 0, 1);
 }
 
-.sidebar-range-input:active+.sidebar-range-label {
+.sidebar-range-input:active + .sidebar-range-label {
 	color: rgba(0, 0, 0, 1);
-}
+} 
+
 
 .left-range-label {
 	margin-left: -7px;
@@ -3042,6 +3053,10 @@ a {
 	outline: none;
 }
 
+.footer-contacts-link:active {
+	fill: rgba(255, 255, 255, .3);
+}
+
 .product-specifications {
 	max-width: 440px;
 }
@@ -3321,6 +3336,12 @@ a {
 	color: #FF3D3D;
 }
 
+.modal-input:disabled {
+	background: #dddddd;
+}
+
+
+
 .modal-content {
 	margin-top: -10px;
 	box-sizing: border-box;
@@ -3497,33 +3518,16 @@ a {
 	z-index: 0;
 }
 
-.customer-lable-mark::before {
-	position: inherit;
-	content: "";
-	width: 2px;
-	height: 8px;
-	color: black;
-	background-color: black;
-	top: 10px;
-	right: 12px;
-}
-
-.customer-lable-mark::after {
-	position: inherit;
-	content: "";
-	width: 2px;
-	height: 2px;
-	color: black;
-	background-color: black;
-	top: 6px;
-	right: 12px;
+.customer-label-mark {
+	border: none;
+	outline: none;
 }
 
 .modal-form-quantity {
 	position: relative;
 }
 
-.modal-form-quantity::before {
+.customer-label-mark::before {
 	position: absolute;
 	content: "";
 	background-image: url("../img/modal-email-ellipse.svg");
@@ -3535,7 +3539,7 @@ a {
 	cursor: pointer;
 }
 
-.modal-form-quantity::after {
+.customer-label-mark::after {
 	position: absolute;
 	content: "";
 	background-image: url("../img/modal-info-mark.svg");
@@ -3547,7 +3551,7 @@ a {
 	cursor: pointer;
 }
 
-.modal-form-quantity:hover+.order-quantity-popover {
+.customer-label-mark:hover + .order-quantity-popover {
 	display: block;
 }
 
